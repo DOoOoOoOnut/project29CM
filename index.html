@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>감도 높은 취향 셀렉트샵, 29CM</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
     <div class="all">
-        <!-- 15% 팝업 / 모바일 앱으로보기 버튼 잊지말기-->
+        <!-- 15% 팝업 -->
+        <a class="pop_top">
+            <!-- 데스크탑, 태블릿 -->
+            <div class="pop_all">
+                <p>29CM신규가입 앱<span>15%</span>쿠폰<img src="" alt=""></p>
+                <p>[카카오페이]6만원 이상<span>2천원</span>선착순 즉시할인<img src="" alt=""></p>
+            </div>
+            <!-- 모바일 -->
+            <div class="pop_mobile">
+                <p><img src="" alt="">29cm 앱 설치하고<span>15%</span>혜택 받기</p>
+                <p>앱으로 보기</p>
+            </div>
+        </a>
         <!-- 위로가기, 채팅버튼 -->
+        <div class="go_top"><button type="button" id="go_top_btn"><img src="" alt=""></button></div>
+        <a href="#" id="chat_btn"><img src="" alt=""></a>
         <!-- 모바일 전용/ 앱설치 쿠폰 팝업 -->
         <!-- 헤더 -->
         <header>
@@ -22,9 +39,9 @@
                     <a href="#"><img src="./images/main/sp_29cm.png" alt=""><span>SHOPPING BAG</span></a>
                     <a href="#"><img src="./images/main/sp_29cm.png" alt=""><span>LOGOUT</span></a>
                     <!-- 태블릿, 모바일 -->
-                    <a href="#"><img src="./images/main/sp_29cm.png" alt="마이페이지"></a>
-                    <a href="#"><img src="./images/main/sp_29cm.png" alt=""></a>
-                    <a href="#"><img src="./images/main/sp_29cm.png" alt=""></a>
+                    <a href="#"><img src="./images/main/sp_29cm.png" alt="검색하기"></a>
+                    <a href="#"><img src="./images/main/sp_29cm.png" alt="장바구니"></a>
+                    <!-- <a href="#"><img src="./images/main/sp_29cm.png" alt="카테고리"></a> -->
                 </div>
             </div>
             <!-- 헤더 2행 큰 링크 + 검색 -->
@@ -35,8 +52,30 @@
                     <a href="#">PT</a>
                     <a href="#">Welove</a>
                 </div>
-                <!-- 검색 아이콘 + 펼쳐진 창 -->
-                <a href="#" id="search"><img src="./images/main/sp_29cm.png" alt="검색하기"></a>
+                <!-- 검색 아이콘 -->
+                <button type="button" id="search_open_btn"><img src="./images/main/sp_29cm.png" alt="검색하기"></button>
+                <!-- 검색 펼쳐진 창 -->
+                <form action="#" method="get" id="searchFrm">
+                    <button type="button" id="no_search_btn"><img src="" alt=""></button>
+                    <fieldset>
+                        <legend>검색</legend>
+                        <input type="search" name="search" class="search_bar" placeholder="Search">
+                        <button type="submit" name="search_icon" id="search_btn"><img src="./images/main/sp_29cm.png" alt="검색하기"></button>
+                    </fieldset>
+                    <dl class="search_keyword">
+                        <dt>인기 검색어</dt>
+                        <dd>리복</dd>
+                        <dd>newbalance</dd>
+                        <dd>salomon</dd>
+                        <dd>ugg</dd>
+                        <dd>장갑</dd>
+                        <dd>바라클라바</dd>
+                        <dd>니트</dd>
+                        <dd>목도리</dd>
+                        <dd>onitsuka tiger</dd>
+                        <dd>oofos</dd>
+                    </dl>
+                </form>
             </div>
             <!-- 헤더 3행 네비게이션 -->
             <nav>
@@ -45,10 +84,10 @@
                     <li><a href="#">BEST</a></li>
                     <!-- WOMEN -->
                     <li><a href="#">WOMEN</a>
-                        <ul class="lnb">
+                        <ul class="lnb_depth1">
                             <li>
                                 <a href="#">의류</a><!-- 10개 -->
-                                <ul class="snb">
+                                <ul class="lnb_depth2">
                                     <li><a href="#">ALL</a></li>
                                     <li><a href="#">NEW</a></li>
                                     <li><a href="#">EXCLUSIVE</a></li>
@@ -268,7 +307,7 @@
                     <!-- BEAUTY -->
                     <li><a href="#">BEAUTY</a>
                         <ul class="lnb">
-                            <li><a href="#">뷰티</a>
+                            <li><a href="#">뷰티</a><!-- 21개 -->
                                 <ul class="snb">
                                     <!-- 1열 -->
                                     <li><a href="#"></a></li>
@@ -380,7 +419,7 @@
                     <!-- CULTURE -->
                     <li><a href="#">CULTURE</a>
                         <ul class="lnb">
-                            <li><a href="#">컬쳐</a>
+                            <li><a href="#">컬쳐</a><!-- 6개 -->
                                 <ul class="snb">
                                     <li><a href="#">ALL</a></li>
                                     <li><a href="#">NEW</a></li>
@@ -411,12 +450,16 @@
                 </div>
             </nav>
         </header>
+        <!-- mobile bottom 고정 메뉴  -->
+        <div id="m_nav_btm">
+            <a href="#"></a>
+        </div>
         <main>
             <!-- 왼쪽 사진배너 행-->
             <div class="left"> <!-- 10개 -->
-                <ul>
-                    <li class="bnr"><a href="#"><img src="" alt=""></a></li>
-                    <li class="bnr"><a href="#"><img src="" alt=""></a></li>
+                <ul class="bnr">
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
                     <li class="bnr"><a href="#"><img src="" alt=""></a></li>
                     <li class="bnr"><a href="#"><img src="" alt=""></a></li>
                     <li class="bnr"><a href="#"><img src="" alt=""></a></li>
@@ -430,7 +473,7 @@
             <!-- 오른쪽 2행 -->
             <div class="right_boxs">
                 <!-- 오른쪽 첫째줄 -->
-                <div class="box">
+                <div class="box"> <!-- 10개 내외 예정 -->
                     <!-- 박스 타입 1 샘플-->
                     <div class="box_type1">
                         <a href="#" class="type1_top">
@@ -453,7 +496,7 @@
                         </ul>
                     </div>
                     <!-- 박스 타입 2 샘플-->
-                    <div class="box_type2"><a href="#">
+                    <div class="box_type2"><a href="#"> 
                             <img src="" alt=""><span>오늘의 스페셜오더</span>
                             <span>오직 29CM에서만 만나볼 수 있는 제품 혹은 구성을 합리적인 가격으로<br> 소개합니다. 잘 만든 제품을 엄선하여 당신의 특별하고 현명한 소비를<br>도와주는 스페셜오더를 경험해보세요.</span>
                         </a>
@@ -478,7 +521,7 @@
                     </div>
                 </div>
                 <!-- 오른쪽 둘째줄 -->
-                <div class="box"></div>
+                <div class="box"><!-- 10개 내외 예정 --></div>
             </div>
             <div class="more_btn"><button type="button">MORE</button></div>
         </main>
@@ -507,18 +550,65 @@
             <ul class="fnb">
                 <li>
                     <p>NOTICE</p>
-                    <ul class="fnb_sub"><!-- overflow? -->
-                        <li>[공지] 247 서울(247SEOUL)브랜드 상품 전수 조사 결과 및 추가 환불 상...</li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                    <ul class="fnb_sub">
+                        <li><a href="#">[공지] 247 서울(247SEOUL)브랜드 상품 전수 조사 결과 및 추가 환불 상품 안내</a></li>
+                        <li><a href="#">[공지] 29CM 개인정보 처리방침 개정 사전 안내</a></li>
+                        <li><a href="#">[공지] 할렌(HALDEN) 브랜드 캐시미어 머플러 상품 판매 중단 및 환불 안내</a></li>
+                        <li><a href="#">[공지] 247 서울(247 SEOUL) 브랜드 캐시미어 머플러 상품 판매 중단 및 환불 안내</a></li>
+                        <li><a href="#">[공지] "카카오톡으로 선물"기능 장애 안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>ABOUT US</p>
+                    <ul class="fnb_sub">
+                        <li><a href="#">29CM 소개</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">상시 할인 혜택</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>MY ORDER</p>
+                    <ul class="fnb_sub">
+                        <li><a href="#">주문배송</a></li>
+                        <li><a href="#">취소/교환/반품 내역</a></li>
+                        <li><a href="#">상품리뷰 내역</a></li>
+                        <li><a href="#">증빙서류발급</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>MY ACCOUNT</p>
+                    <ul class="fnb_sub">
+                        <li><a href="#">회원정보수정</a></li>
+                        <li><a href="#">회원등급</a></li>
+                        <li><a href="#">마일리지현황</a></li>
+                        <li><a href="#">쿠폰</a></li>
                     </ul>
                 </li>
             </ul>
             <!-- 푸터 3행 -->
-            <address></address>
+            <address>
+                <div class="left">
+                    <span>
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">이용약관</a>
+                    </span>
+                    <span>
+                        상호명주식회사 무신사 (MUSINSA Co., Ltd.)사업장소재지서울특별시 성동구 아차산로 13길 11, 1층 (성수동2가, 무신사캠퍼스 엔1)팩스070-8622-7737<br>
+                        사업자등록번호 211-88-79575 통신판매업신고2022-서울성동-01952<a href="#">사업자정보확인</a><br>
+                        전화번호 1644-0560 이메일 customer@29cm.co.kr 대표 한문일 개인정보 보호책임자 이인섭 호스팅서비스 (주)무신사<br>
+                        일부 상품의 경우 29CM는 통신판매의 당사자가 아닌 통신판매중개자로서 상품, 상품정보, 거래에 대한 책임이 제한될 수 있으므로, 각 상품 페이지에서 구체적인 내용을 확인하시기 바랍니다.
+                    </span>
+                </div>
+                <p class="right">KG 에스크로 가입 사실 확인</p>
+            </address>
         </footer>
+        <!-- 모바일화면 아래 카테고리 바 -->
+        <div class="mobile_menu">
+            <a href="#"><img src="" alt=""><span>HOME</span></a>
+            <a href="#"><img src="" alt=""><span>SHOP</span></a>
+            <a href="#"><img src="" alt=""><span>WELOVE</span></a>
+            <a href="#"><img src="" alt=""><span>MY</span></a>
+        </div>
     </div>
 </body>
 </html>
