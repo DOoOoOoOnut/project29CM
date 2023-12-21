@@ -14,8 +14,8 @@
         <a class="pop_top">
             <!-- 데스크탑, 태블릿 -->
             <div class="pop_all">
-                <p>29CM신규가입 앱<span>15%</span>쿠폰<img src="" alt=""></p>
-                <p>[카카오페이]6만원 이상<span>2천원</span>선착순 즉시할인<img src="" alt=""></p>
+                <a href="#">29CM신규가입 앱<span>15%</span>쿠폰<img src="" alt=""></a>
+                <a href="#">[카카오페이]6만원 이상<span>2천원</span>선착순 즉시할인<img src="" alt=""></a>
             </div>
             <!-- 모바일 -->
             <div class="pop_mobile">
@@ -24,9 +24,18 @@
             </div>
         </a>
         <!-- 위로가기, 채팅버튼 -->
-        <div class="go_top"><button type="button" id="go_top_btn"><img src="" alt=""></button></div>
-        <a href="#" id="chat_btn"><img src="" alt=""></a>
+        <div class="pop_btn">
+            <a href="#" id="go_top_btn"><img src="#" alt=""></a>
+            <a href="#" id="chat_btn"><img src="" alt=""></a>
+        </div>
         <!-- 모바일 전용/ 앱설치 쿠폰 팝업 -->
+        <!-- 모바일화면 아래 카테고리 바 -->
+        <div class="mobile_menu">
+            <a href="#"><img src="" alt=""><span>HOME</span></a>
+            <a href="#"><img src="" alt=""><span>SHOP</span></a>
+            <a href="#"><img src="" alt=""><span>WELOVE</span></a>
+            <a href="#"><img src="" alt=""><span>MY</span></a>
+        </div>
         <!-- 헤더 -->
         <header>
             <!-- 헤더 1행 로고 + 개인메뉴 -->
@@ -53,29 +62,31 @@
                     <a href="#">Welove</a>
                 </div>
                 <!-- 검색 아이콘 -->
-                <button type="button" id="search_open_btn"><img src="./images/main/sp_29cm.png" alt="검색하기"></button>
+                <a href="#" id="search_open_btn"><img src="./images/main/sp_29cm.png" alt="검색하기"></a>
                 <!-- 검색 펼쳐진 창 -->
-                <form action="#" method="get" id="searchFrm">
-                    <button type="button" id="no_search_btn"><img src="" alt=""></button>
-                    <fieldset>
-                        <legend>검색</legend>
-                        <input type="search" name="search" class="search_bar" placeholder="Search">
-                        <button type="submit" name="search_icon" id="search_btn"><img src="./images/main/sp_29cm.png" alt="검색하기"></button>
-                    </fieldset>
-                    <dl class="search_keyword">
-                        <dt>인기 검색어</dt>
-                        <dd>리복</dd>
-                        <dd>newbalance</dd>
-                        <dd>salomon</dd>
-                        <dd>ugg</dd>
-                        <dd>장갑</dd>
-                        <dd>바라클라바</dd>
-                        <dd>니트</dd>
-                        <dd>목도리</dd>
-                        <dd>onitsuka tiger</dd>
-                        <dd>oofos</dd>
-                    </dl>
-                </form>
+                <div id="search_open_page">
+                    <a href="#" id="back_search_btn"></a>
+                    <form action="#" method="get" id="searchFrm">
+                        <fieldset>
+                            <legend>검색</legend>
+                            <input type="search" name="search" class="search_bar" placeholder="Search">
+                            <button type="submit" name="search_icon" id="search_btn"><img src="./images/main/sp_29cm.png" alt="검색하기"></button>
+                        </fieldset>
+                    </form>
+                    <h1>인기검색어</h1>
+                    <p class="keywords">
+                        <a href="#">리복</a>
+                        <a href="#">newbalance</a>
+                        <a href="#">salomon</a>
+                        <a href="#">ugg</a>
+                        <a href="#">장갑</a>
+                        <a href="#">바라클라바</a>
+                        <a href="#">니트</a>
+                        <a href="#">목도리</a>
+                        <a href="#">onitsuka tiger</a>
+                        <a href="#">oofos</a>
+                    </p>
+                </div>
             </div>
             <!-- 헤더 3행 네비게이션 -->
             <nav>
@@ -102,7 +113,7 @@
                             </li>
                             <li>
                                 <a href="#">가방</a><!-- 10개 -->
-                                <ul class="snb">
+                                <ul class="lnb_depth2">
                                     <li><a href="#">ALL</a></li>
                                     <li><a href="#">NEW</a></li>
                                     <li><a href="#">EXCLUSIVE</a></li>
@@ -117,7 +128,7 @@
                             </li>
                             <li>
                                 <a href="#">신발</a><!-- 10개 -->
-                                <ul class="snb">
+                                <ul class="lnb_depth2">
                                     <li><a href="#">ALL</a></li>
                                     <li><a href="#">NEW</a></li>
                                     <li><a href="#">EXCLUSIVE</a></li>
@@ -132,7 +143,7 @@
                             </li>
                             <li>
                                 <a href="#">액세서리</a><!-- 10개 -->
-                                <ul class="snb">
+                                <ul class="lnb_depth2">
                                     <li><a href="#">ALL</a></li>
                                     <li><a href="#">NEW</a></li>
                                     <li><a href="#">EXCLUSIVE</a></li>
@@ -160,10 +171,10 @@
                     </li>
                     <!-- MEN -->
                     <li><a href="#">MEN</a>
-                        <ul class="lnb">
+                        <ul class="lnb_depth1">
                             <li>
                                 <a href="#">의류</a><!-- 10개 -->
-                                <ul class="snb">
+                                <ul class="lnb_depth2">
                                     <li><a href="#">ALL</a></li>
                                     <li><a href="#">NEW</a></li>
                                     <li><a href="#">EXCLUSIVE</a></li>
@@ -178,7 +189,7 @@
                             </li>
                             <li>
                                 <a href="#">가방</a><!-- 10개 -->
-                                <ul class="snb">
+                                <ul class="lnb_depth2">
                                     <li><a href="#">ALL</a></li>
                                     <li><a href="#">NEW</a></li>
                                     <li><a href="#">EXCLUSIVE</a></li>
@@ -193,7 +204,7 @@
                             </li>
                             <li>
                                 <a href="#">신발</a><!-- 10개 -->
-                                <ul class="snb">
+                                <ul class="lnb_depth2">
                                     <li><a href="#">ALL</a></li>
                                     <li><a href="#">NEW</a></li>
                                     <li><a href="#">EXCLUSIVE</a></li>
@@ -208,7 +219,7 @@
                             </li>
                             <li>
                                 <a href="#">악세사리</a><!-- 10개 -->
-                                <ul class="snb">
+                                <ul class="lnb_depth2">
                                     <li><a href="#">ALL</a></li>
                                     <li><a href="#">NEW</a></li>
                                     <li><a href="#">EXCLUSIVE</a></li>
@@ -225,9 +236,9 @@
                     </li>
                     <!-- INTERIOR -->
                     <li><a href="#">INTERIOR</a>
-                        <ul class="lnb">
+                        <ul class="lnb_depth1">
                             <li><a href="#">가구,인테리어</a><!-- 14개 -->
-                                <ul class="snb">
+                                <ul class="lnb_depth2">
                                     <li><a href="#">ALL</a></li>
                                     <li><a href="#">NEW</a></li>
                                     <li><a href="#">비앤비이탈리아</a></li>
@@ -248,9 +259,9 @@
                     </li>
                     <!-- KITCHEN -->
                     <li><a href="#">KITCHEN</a>
-                        <ul class="lnb">
+                        <ul class="lnb_depth1">
                             <li><a href="#">주방,생활</a><!-- 11개 -->
-                                <ul class="snb">
+                                <ul class="lnb_depth2">
                                     <li><a href="#">ALL</a></li>
                                     <li><a href="#">NEW</a></li>
                                     <li><a href="#">PREMIUM</a></li>
@@ -268,9 +279,9 @@
                     </li>
                     <!-- ELECTRONICS -->
                     <li><a href="#">ELECTRONICS</a>
-                        <ul class="lnb">
+                        <ul class="lnb_depth1">
                             <li><a href="#">가전</a><!-- 11개 -->
-                                <ul class="snb">
+                                <ul class="lnb_depth2">
                                     <li><a href="#">ALL</a></li>
                                     <li><a href="#">NEW</a></li>
                                     <li><a href="#">영상가전</a></li>
@@ -288,9 +299,9 @@
                     </li>
                     <!-- DIGITAL -->
                     <li><a href="#">DIGITAL</a>
-                        <ul class="lnb">
+                        <ul class="lnb_depth1">
                             <li><a href="#">컴퓨터,디지털</a><!-- 9개 -->
-                                <ul class="snb">
+                                <ul class="lnb_depth2">
                                     <li><a href="#">ALL</a></li>
                                     <li><a href="#">NEW</a></li>
                                     <li><a href="#">음향기기</a></li>
@@ -306,9 +317,9 @@
                     </li>
                     <!-- BEAUTY -->
                     <li><a href="#">BEAUTY</a>
-                        <ul class="lnb">
+                        <ul class="lnb_depth1">
                             <li><a href="#">뷰티</a><!-- 21개 -->
-                                <ul class="snb">
+                                <ul class="lnb_depth2">
                                     <!-- 1열 -->
                                     <li><a href="#"></a></li>
                                     <li><a href="#"></a></li>
@@ -347,9 +358,9 @@
                     </li>
                     <!-- FOOD -->
                     <li><a href="#">FOOD</a>
-                        <ul class="lnb">
+                        <ul class="lnb_depth1">
                             <li><a href="#">푸드</a><!-- 6개 -->
-                                <ul class="snb">
+                                <ul class="lnb_depth2">
                                     <li><a href="#">ALL</a></li>
                                     <li><a href="#">NEW</a></li>
                                     <li><a href="#">선물세트</a></li>
@@ -373,9 +384,9 @@
                     </li>
                     <!-- LEISURE -->
                     <li><a href="#">LEISURE</a>
-                        <ul class="lnb">
+                        <ul class="lnb_depth1">
                             <li><a href="#">레저</a><!-- 11개 -->
-                                <ul class="snb">
+                                <ul class="lnb_depth2">
                                     <li><a href="#">ALL</a></li>
                                     <li><a href="#">NEW</a></li>
                                     <li><a href="#">캠핑</a></li>
@@ -404,9 +415,9 @@
                     </li>
                     <!-- KIDS -->
                     <li><a href="#">KIDS</a>
-                        <ul class="lnb">
+                        <ul class="lnb_depth1">
                             <li><a href="#">유아,아동</a><!-- 5개 -->
-                                <ul class="snb">
+                                <ul class="lnb_depth2">
                                     <li><a href="#">ALL</a></li>
                                     <li><a href="#">NEW</a></li>
                                     <li><a href="#">의류</a></li>
@@ -418,9 +429,9 @@
                     </li>
                     <!-- CULTURE -->
                     <li><a href="#">CULTURE</a>
-                        <ul class="lnb">
+                        <ul class="lnb_depth1">
                             <li><a href="#">컬쳐</a><!-- 6개 -->
-                                <ul class="snb">
+                                <ul class="lnb_depth2">
                                     <li><a href="#">ALL</a></li>
                                     <li><a href="#">NEW</a></li>
                                     <li><a href="#">숙박,여행</a></li>
@@ -478,13 +489,13 @@
                     <div class="box_type1">
                         <a href="#" class="type1_top">
                             <p><img src="#" alt=""></p>
-                            <p>아우터 속 포인트</p>
+                            <h2>아우터 속 포인트</h2>
                             <p>두꺼운 외투 안에 나만의 숨겨진<br>포인트가 되는 그래픽,로고 아이템을 준비했어요. 과하지 않은 매력으로<br>다양한 옷에 매치하기 좋아요.</p>
                         </a>
                         <ul class="type1_btm">
                             <li class="btm_item"><a href="#">
                                     <p class="type1_brand">아페쎄</p>
-                                    <p>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</p>
+                                    <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
                                     <p class="btm_price">60% 102,000won</p>    
                                 </a>
                             </li>
@@ -497,26 +508,28 @@
                     </div>
                     <!-- 박스 타입 2 샘플-->
                     <div class="box_type2"><a href="#"> 
-                            <img src="" alt=""><span>오늘의 스페셜오더</span>
-                            <span>오직 29CM에서만 만나볼 수 있는 제품 혹은 구성을 합리적인 가격으로<br> 소개합니다. 잘 만든 제품을 엄선하여 당신의 특별하고 현명한 소비를<br>도와주는 스페셜오더를 경험해보세요.</span>
+                            <p><img src="" alt=""></p>
+                            <h2>오늘의 스페셜오더</h2>
+                            <p>오직 29CM에서만 만나볼 수 있는 제품 혹은 구성을 합리적인 가격으로<br> 소개합니다. 잘 만든 제품을 엄선하여 당신의 특별하고 현명한 소비를<br>도와주는 스페셜오더를 경험해보세요.</p>
                         </a>
                     </div>
                     <!-- 박스 타입 3 샘플-->
                     <div class="box_type3">
+                        <h2>연말 룩을 고민 중이라면</h2>
                         <div class="type3_top">
                             <div class="back_btn"><button type="button"><img src="" alt=""></button></div><!-- 버튼으로 넣어야 하나? -->
                             <a href="#"><img src="#" alt=""></a>
                             <div class="next_btn"><button type="button" id="next_btn"><img src="" alt=""></button></div>
                         </div>
                         <div class="type3_btm">
-                            <div class="type3_left">
+                            <div class="type3_btm_left">
                                 <a href="#" class="type3_brand">무쿠앤에보니</a>
                                 <a href="#">
-                                    <p>Comfy Bag_Black</p>
+                                    <h2>Comfy Bag_Black</h2>
                                     <p>65,000<span>원</span></p>
                                 </a>
                             </div>
-                            <div class="type3_right"><img src="" alt=""></div>
+                            <div class="type3_btm_right"><img src="" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -602,13 +615,6 @@
                 <p class="right">KG 에스크로 가입 사실 확인</p>
             </address>
         </footer>
-        <!-- 모바일화면 아래 카테고리 바 -->
-        <div class="mobile_menu">
-            <a href="#"><img src="" alt=""><span>HOME</span></a>
-            <a href="#"><img src="" alt=""><span>SHOP</span></a>
-            <a href="#"><img src="" alt=""><span>WELOVE</span></a>
-            <a href="#"><img src="" alt=""><span>MY</span></a>
-        </div>
     </div>
 </body>
 </html>
