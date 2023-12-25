@@ -37,7 +37,7 @@
                 <a href="#">오늘 하루 보지 않기</a>
             </div>
         </div>
-        <!-- 모바일화면 아래 카테고리 바 -->
+        <!-- 모바일 전용 하단 메뉴 -->
         <div class="m_menu">
             <a href="#"><img src="" alt=""><span>HOME</span></a>
             <a href="#"><img src="" alt=""><span>SHOP</span></a>
@@ -48,7 +48,9 @@
         <header>
             <!-- 헤더 1행 로고 + 개인메뉴 -->
             <div class="header_top">
+                <!-- 로고 -->
                 <h1><a href="./index.html"><img src="./images/main/logo_black.png" alt="29CM"></a></h1>
+                <!-- 개인메뉴 -->
                 <div class="user_menu">
                     <!-- 데스크탑 전용 -->
                     <a href="#"><img src="./images/main/sp_29cm.png" alt=""><span>MY PAGE</span></a>
@@ -63,7 +65,7 @@
                     <!-- <a href="#"><img src="./images/main/sp_29cm.png" alt="카테고리"></a> -->
                 </div>
             </div>
-            <!-- 헤더 2행 큰 링크 + 검색 -->
+            <!-- 헤더 2행 메뉴 2행 + 검색 -->
             <div class="header_center">
                 <div class="post"><!-- 메뉴 2행 -->
                     <a href="#">Special-Order</a>
@@ -72,19 +74,21 @@
                     <a href="#">Welove</a>
                 </div>
                 <div class="search">
-                    <!-- 검색 아이콘 -->
+                    <!-- 검색 아이콘 - 펼치기 전 -->
                     <a href="#" id="search_open_btn"><img src="./images/main/sp_29cm.png" alt="검색하기"></a>
-                    <!-- 검색 펼쳐진 창 -->
+                    <!-- 검색창 + 인기검색어 - 펼쳐진 창-->
                     <div id="search_open_page">
                         <a href="./index.html" id="back_search_btn"></a>
                         <div class="search_keywords">
-                            <form action="#" method="get" id="searchFrm"> 
+                            <!-- 검색창 -->
+                            <form action="#" method="get" id="search_frm"> 
                                 <fieldset>
-                                    <legend>검색</legend>
+                                    <legend class="skip">검색</legend>
                                     <input type="search" name="search" class="search_bar" placeholder="Search">
                                     <button type="submit" name="search_icon" id="search_btn"><img src="./images/main/sp_29cm.png" alt="검색하기"></button>
                                 </fieldset>
                             </form>
+                            <!-- 인기검색어 -->
                             <div class="keywords">
                                 <h1 class="keywords_title">인기검색어</h1>
                                 <p class="keywords_contents">
@@ -178,7 +182,7 @@
                         <!-- 이벤트박스 -->
                         <div class="event_box">
                             <a href="#" class="event_top">
-                                <div class="event_img"><img src="" alt=""></div>
+                                <div class="event_img"><img src="./images/main/nav_event_woman.jpg" alt=""></div>
                                 <p class="event_name">FOCUS:포 유어 아이즈 온리~20%</p>
                             </a>
                             <a href="#" class="event_btm">
@@ -333,11 +337,11 @@
                                         <li><a href="#">NEW</a></li>
                                         <li><a href="#">음향기기</a></li>
                                         <li><a href="#">모바일,웨어러블</a></li>
-                                        <li><a href="#"></a>모바일 액세서리</li>
-                                        <li><a href="#"></a>PC,노트북</li>
-                                        <li><a href="#"></a>게임</li>
-                                        <li><a href="#"></a>사진</li>
-                                        <li><a href="#"></a>자동차용품,장난감</li>
+                                        <li><a href="#">모바일 액세서리</a></li>
+                                        <li><a href="#">PC,노트북</a></li>
+                                        <li><a href="#">게임</a></li>
+                                        <li><a href="#">사진</a></li>
+                                        <li><a href="#">자동차용품,장난감</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -350,26 +354,26 @@
                                 <li><a href="#">뷰티</a><!-- 21개 -->
                                     <ul class="lnb_depth2">
                                         <!-- 1열 -->
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">선물세트</a></li>
+                                        <li><a href="#">스킨케어</a></li>
+                                        <li><a href="#">EXCLUSIVE</a></li>
+                                        <li><a href="#">채식주의</a></li>
+                                        <li><a href="#">친환경 패키지</a></li>
                                         <!-- 2열 -->
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
+                                        <li><a href="#">자연유래</a></li>
+                                        <li><a href="#">바디케어</a></li>
+                                        <li><a href="#">헤어케어</a></li>
+                                        <li><a href="#">메이크업</a></li>
+                                        <li><a href="#">네일,디자인타투</a></li>
+                                        <li><a href="#">향수</a></li>
+                                        <li><a href="#">여성용품</a></li>
                                         <!-- 3열 -->
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
+                                        <li><a href="#">뷰티기기,마스크</a></li>
+                                        <li><a href="#">남성뷰티</a></li>
+                                        <li><a href="#">스킨타입</a></li>
+                                        <li><a href="#">이너뷰티</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -377,7 +381,7 @@
                         <!-- 이벤트박스 -->
                         <div class="event_box">
                             <a href="#" class="event_top">
-                                <div class="event_img"><img src="" alt=""></div>
+                                <div class="event_img"><img src="./images/main/nav_event_food.jpg" alt=""></div><!-- 이미지 임시 -->
                                 <p class="event_name">HIGHLIGHT : 한아조, 베이지크, SW19</p>
                             </a>
                             <a href="#" class="event_btm">
@@ -405,7 +409,7 @@
                         <!-- 이벤트박스 -->
                         <div class="event_box">
                             <a href="#" class="event_top">
-                                <div class="event_img"><img src="" alt=""></div>
+                                <div class="event_img"><img src="./images/main/nav_event_food.jpg" alt=""></div>
                                 <p class="event_name">소중한 이에게 전하는 크리스마스 선물</p>
                             </a>
                             <a href="#" class="event_btm">
@@ -438,7 +442,7 @@
                         <!-- 이벤트박스 -->
                         <div class="event_box">
                             <a href="#" class="event_top">
-                                <div class="event_img"><img src="" alt=""></div>
+                                <div class="event_img"><img src="./images/main/nav_event_leisure.jpg" alt=""></div>
                                 <p class="event_name">모험가의 물건 EP.18 라코스테</p>
                             </a>
                             <a href="#" class="event_btm">
@@ -482,7 +486,7 @@
                         <!-- 이벤트박스 -->
                         <div class="event_box">
                             <a href="#" class="event_top">
-                                <div class="event_img"><img src="" alt=""></div>
+                                <div class="event_img"><img src="./images/main/nav_event_culture.jpg" alt=""></div>
                                 <p class="event_name">[얼리버드]미셸 들라크루아,파리의 벨 에포크</p>
                             </a>
                             <a href="#" class="event_btm">
@@ -533,7 +537,7 @@
                         <div class="type1_btm">
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -550,7 +554,7 @@
                             </ul>
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -559,7 +563,7 @@
                                         </a>  
                                     </div> 
                                 </li>
-                                <li class="btm_like"><a href="#">
+                                <li class="btm_like"><a href="#"><!-- fafont -->
                                         <img src="" alt="좋아요하기">
                                         <span>1,205</span>
                                     </a>
@@ -570,7 +574,7 @@
                     <!-- 박스 타입 2-->
                     <div class="box_type2">
                         <a href="#"> 
-                            <p class="photo"><img src="" alt=""></p>
+                            <p class="photo"><img src="./images/main/post_09.jpg" alt=""></p>
                             <h2>오늘의 스페셜오더</h2>
                             <p class="contents">오직 29CM에서만 만나볼 수 있는 제품 혹은 구성을 합리적인 가격으로<br> 소개합니다. 잘 만든 제품을 엄선하여 당신의 특별하고 현명한 소비를<br>도와주는 스페셜오더를 경험해보세요.</p>
                         </a>
@@ -591,7 +595,7 @@
                         <p class="type3_item_wrap">
                             <!-- 아이템 1 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -602,7 +606,7 @@
                             </div>
                             <!-- 아이템 2 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl02.png" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -613,7 +617,7 @@
                             </div>
                             <!-- 아이템 3 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl03.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -624,7 +628,7 @@
                             </div>
                             <!-- 아이템 4-->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl04.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -635,7 +639,7 @@
                             </div>
                             <!-- 아이템 5 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl05.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -646,7 +650,7 @@
                             </div>
                             <!-- 아이템 6 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl06.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -657,7 +661,7 @@
                             </div>
                             <!-- 아이템 7 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl07.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -668,7 +672,7 @@
                             </div>
                             <!-- 아이템 8 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl08.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -679,7 +683,7 @@
                             </div>
                             <!-- 아이템 9 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl09.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -690,7 +694,7 @@
                             </div>
                             <!-- 아이템 10 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl10.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -711,7 +715,7 @@
                         <div class="type1_btm">
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -728,7 +732,7 @@
                             </ul>
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -748,7 +752,7 @@
                     <!-- 박스 타입 2-->
                     <div class="box_type2">
                         <a href="#"> 
-                            <p class="photo"><img src="" alt=""></p>
+                            <p class="photo"><img src="./images/main/post_09.jpg" alt=""></p>
                             <h2>오늘의 스페셜오더</h2>
                             <p class="contents">오직 29CM에서만 만나볼 수 있는 제품 혹은 구성을 합리적인 가격으로<br> 소개합니다. 잘 만든 제품을 엄선하여 당신의 특별하고 현명한 소비를<br>도와주는 스페셜오더를 경험해보세요.</p>
                         </a>
@@ -763,7 +767,7 @@
                         <div class="type1_btm">
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -780,7 +784,7 @@
                             </ul>
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -789,7 +793,7 @@
                                         </a>  
                                     </div> 
                                 </li>
-                                <li class="btm_like"><a href="#">
+                                <li class="btm_like"><a href="#"><!-- fafont -->
                                         <img src="" alt="좋아요하기">
                                         <span>1,205</span>
                                     </a>
@@ -800,7 +804,7 @@
                     <!-- 박스 타입 2-->
                     <div class="box_type2">
                         <a href="#"> 
-                            <p class="photo"><img src="" alt=""></p>
+                            <p class="photo"><img src="./images/main/post_09.jpg" alt=""></p>
                             <h2>오늘의 스페셜오더</h2>
                             <p class="contents">오직 29CM에서만 만나볼 수 있는 제품 혹은 구성을 합리적인 가격으로<br> 소개합니다. 잘 만든 제품을 엄선하여 당신의 특별하고 현명한 소비를<br>도와주는 스페셜오더를 경험해보세요.</p>
                         </a>
@@ -821,7 +825,7 @@
                         <p class="type3_item_wrap">
                             <!-- 아이템 1 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -832,7 +836,7 @@
                             </div>
                             <!-- 아이템 2 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl02.png" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -843,7 +847,7 @@
                             </div>
                             <!-- 아이템 3 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl03.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -854,7 +858,7 @@
                             </div>
                             <!-- 아이템 4-->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl04.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -865,7 +869,7 @@
                             </div>
                             <!-- 아이템 5 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl05.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -876,7 +880,7 @@
                             </div>
                             <!-- 아이템 6 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl06.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -887,7 +891,7 @@
                             </div>
                             <!-- 아이템 7 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl07.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -898,7 +902,7 @@
                             </div>
                             <!-- 아이템 8 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl08.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -909,7 +913,7 @@
                             </div>
                             <!-- 아이템 9 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl09.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -920,7 +924,7 @@
                             </div>
                             <!-- 아이템 10 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl10.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -941,7 +945,7 @@
                         <div class="type1_btm">
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -958,7 +962,7 @@
                             </ul>
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -967,7 +971,7 @@
                                         </a>  
                                     </div> 
                                 </li>
-                                <li class="btm_like"><a href="#">
+                                <li class="btm_like"><a href="#"><!-- fafont -->
                                         <img src="" alt="좋아요하기">
                                         <span>1,205</span>
                                     </a>
@@ -991,7 +995,7 @@
                         <p class="type3_item_wrap">
                             <!-- 아이템 1 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1002,7 +1006,7 @@
                             </div>
                             <!-- 아이템 2 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl02.png" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1013,7 +1017,7 @@
                             </div>
                             <!-- 아이템 3 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl03.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1024,7 +1028,7 @@
                             </div>
                             <!-- 아이템 4-->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl04.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1035,7 +1039,7 @@
                             </div>
                             <!-- 아이템 5 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl05.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1046,7 +1050,7 @@
                             </div>
                             <!-- 아이템 6 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl06.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1057,7 +1061,7 @@
                             </div>
                             <!-- 아이템 7 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl07.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1068,7 +1072,7 @@
                             </div>
                             <!-- 아이템 8 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl08.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1079,7 +1083,7 @@
                             </div>
                             <!-- 아이템 9 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl09.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1090,7 +1094,7 @@
                             </div>
                             <!-- 아이템 10 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl10.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1118,7 +1122,7 @@
                         <div class="type1_btm">
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -1135,7 +1139,7 @@
                             </ul>
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -1144,7 +1148,7 @@
                                         </a>  
                                     </div> 
                                 </li>
-                                <li class="btm_like"><a href="#">
+                                <li class="btm_like"><a href="#"><!-- fafont -->
                                         <img src="" alt="좋아요하기">
                                         <span>1,205</span>
                                     </a>
@@ -1162,7 +1166,7 @@
                         <div class="type1_btm">
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -1179,7 +1183,7 @@
                             </ul>
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -1188,7 +1192,7 @@
                                         </a>  
                                     </div> 
                                 </li>
-                                <li class="btm_like"><a href="#">
+                                <li class="btm_like"><a href="#"><!-- fafont -->
                                         <img src="" alt="좋아요하기">
                                         <span>1,205</span>
                                     </a>
@@ -1212,7 +1216,7 @@
                         <p class="type3_item_wrap">
                             <!-- 아이템 1 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1223,7 +1227,7 @@
                             </div>
                             <!-- 아이템 2 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl02.png" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1234,7 +1238,7 @@
                             </div>
                             <!-- 아이템 3 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl03.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1245,7 +1249,7 @@
                             </div>
                             <!-- 아이템 4-->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl04.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1256,7 +1260,7 @@
                             </div>
                             <!-- 아이템 5 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl05.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1267,7 +1271,7 @@
                             </div>
                             <!-- 아이템 6 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl06.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1278,7 +1282,7 @@
                             </div>
                             <!-- 아이템 7 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl07.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1289,7 +1293,7 @@
                             </div>
                             <!-- 아이템 8 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl08.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1300,7 +1304,7 @@
                             </div>
                             <!-- 아이템 9 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl09.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1311,7 +1315,7 @@
                             </div>
                             <!-- 아이템 10 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl10.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1332,7 +1336,7 @@
                         <div class="type1_btm">
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -1349,7 +1353,7 @@
                             </ul>
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -1358,7 +1362,7 @@
                                         </a>  
                                     </div> 
                                 </li>
-                                <li class="btm_like"><a href="#">
+                                <li class="btm_like"><a href="#"><!-- fafont -->
                                         <img src="" alt="좋아요하기">
                                         <span>1,205</span>
                                     </a>
@@ -1369,7 +1373,7 @@
                     <!-- 박스 타입 2-->
                     <div class="box_type2">
                         <a href="#"> 
-                            <p class="photo"><img src="" alt=""></p>
+                            <p class="photo"><img src="./images/main/post_09.jpg" alt=""></p>
                             <h2>오늘의 스페셜오더</h2>
                             <p class="contents">오직 29CM에서만 만나볼 수 있는 제품 혹은 구성을 합리적인 가격으로<br> 소개합니다. 잘 만든 제품을 엄선하여 당신의 특별하고 현명한 소비를<br>도와주는 스페셜오더를 경험해보세요.</p>
                         </a>
@@ -1390,7 +1394,7 @@
                         <p class="type3_item_wrap">
                             <!-- 아이템 1 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1401,7 +1405,7 @@
                             </div>
                             <!-- 아이템 2 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl02.png" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1412,7 +1416,7 @@
                             </div>
                             <!-- 아이템 3 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl03.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1423,7 +1427,7 @@
                             </div>
                             <!-- 아이템 4-->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl04.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1434,7 +1438,7 @@
                             </div>
                             <!-- 아이템 5 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl05.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1445,7 +1449,7 @@
                             </div>
                             <!-- 아이템 6 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl06.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1456,7 +1460,7 @@
                             </div>
                             <!-- 아이템 7 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl07.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1467,7 +1471,7 @@
                             </div>
                             <!-- 아이템 8 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl08.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1478,7 +1482,7 @@
                             </div>
                             <!-- 아이템 9 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl09.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1489,7 +1493,7 @@
                             </div>
                             <!-- 아이템 10 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl10.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1503,7 +1507,7 @@
                     <!-- 박스 타입 2-->
                     <div class="box_type2">
                         <a href="#"> 
-                            <p class="photo"><img src="" alt=""></p>
+                            <p class="photo"><img src="./images/main/post_09.jpg" alt=""></p>
                             <h2>오늘의 스페셜오더</h2>
                             <p class="contents">오직 29CM에서만 만나볼 수 있는 제품 혹은 구성을 합리적인 가격으로<br> 소개합니다. 잘 만든 제품을 엄선하여 당신의 특별하고 현명한 소비를<br>도와주는 스페셜오더를 경험해보세요.</p>
                         </a>
@@ -1518,7 +1522,7 @@
                         <div class="type1_btm">
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -1535,7 +1539,7 @@
                             </ul>
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -1544,7 +1548,7 @@
                                         </a>  
                                     </div> 
                                 </li>
-                                <li class="btm_like"><a href="#">
+                                <li class="btm_like"><a href="#"><!-- fafont -->
                                         <img src="" alt="좋아요하기">
                                         <span>1,205</span>
                                     </a>
@@ -1568,7 +1572,7 @@
                         <p class="type3_item_wrap">
                             <!-- 아이템 1 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1579,7 +1583,7 @@
                             </div>
                             <!-- 아이템 2 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl02.png" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1590,7 +1594,7 @@
                             </div>
                             <!-- 아이템 3 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl03.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1601,7 +1605,7 @@
                             </div>
                             <!-- 아이템 4-->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl04.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1612,7 +1616,7 @@
                             </div>
                             <!-- 아이템 5 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl05.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1623,7 +1627,7 @@
                             </div>
                             <!-- 아이템 6 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl06.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1634,7 +1638,7 @@
                             </div>
                             <!-- 아이템 7 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl07.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1645,7 +1649,7 @@
                             </div>
                             <!-- 아이템 8 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl08.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1656,7 +1660,7 @@
                             </div>
                             <!-- 아이템 9 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl09.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1667,7 +1671,7 @@
                             </div>
                             <!-- 아이템 10 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="#" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl10.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
                                     <a href="#">
@@ -1688,7 +1692,7 @@
                         <div class="type1_btm">
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -1705,7 +1709,7 @@
                             </ul>
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
-                                    <a href="#" class="btm_item_left"><img src="" alt=""></a>
+                                    <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
                                     <div class="btm_item_right">
                                         <a href="#" class="type1_brand">아페쎄</a>
                                         <a href="#">
@@ -1714,7 +1718,7 @@
                                         </a>  
                                     </div> 
                                 </li>
-                                <li class="btm_like"><a href="#">
+                                <li class="btm_like"><a href="#"><!-- fafont -->
                                         <img src="" alt="좋아요하기">
                                         <span>1,205</span>
                                     </a>
@@ -1734,24 +1738,24 @@
                 <div class="voc_left">
                     <p id="tel">고객센터 1644-0560</p>
                     <p>운영시간 : 평일 09:00 - 17:00</p>
-                    <div>
+                    <div class="voc_btn"><!-- fafont -->
                         <a href="#"><span>FNQ</span><img src="" alt=""></a>
                         <a href="#"><span>1:1문의</span><img src="" alt=""></a>
                     </div>
                 </div>
                 <!-- 바로가기 -->
                 <div class="voc_right">
-                    <a href="#"><img src="" alt="인스타그램"></a>
-                    <a href="#"><img src="" alt="유튜브"></a>
-                    <a href="#"><img src="" alt="애플스토어 앱 다운로드"></a>
-                    <a href="#"><img src="" alt="구글플레이 앱 다운로드"></a>
+                    <a href="#"><img src="./images/main/media_icon_instagram.png" alt="인스타그램"></a>
+                    <a href="#"><img src="./images/main/media_icon_youtube.png" alt="유튜브"></a>
+                    <a href="#"><img src="./images/main/media_icon_appstore.png" alt="애플스토어 앱 다운로드"></a>
+                    <a href="#"><img src="./images/main/media_icon_googleplay.png" alt="구글플레이 앱 다운로드"></a>
                 </div>
             </div>
             <!-- 푸터 2행 -->
             <div class="fnb">
                 <dl>
-                    <dt>NOTICE</dt>
-                    <dd class="notice_contents">
+                    <dt class="fnb_title">NOTICE</dt>
+                    <dd class="fnb_contents">
                         <a href="#">[공지] 247 서울(247SEOUL)브랜드 상품 전수 조사 결과 및 추가 환불 상품 안내</a>
                         <a href="#">[공지] 29CM 개인정보 처리방침 개정 사전 안내</a>
                         <a href="#">[공지] 할렌(HALDEN) 브랜드 캐시미어 머플러 상품 판매 중단 및 환불 안내</a>
@@ -1761,16 +1765,16 @@
                 </dl>
                 <div class="right">
                     <dl>
-                        <dt>ABOUT US</dt>
-                        <dd>
+                        <dt class="fnb_title">ABOUT US</dt>
+                        <dd class="fnb_contents">
                             <a href="#">29CM 소개</a>
                             <a href="#">인재채용</a>
                             <a href="#">상시 할인 혜택</a>
                         </dd>
                     </dl>
                     <dl>
-                        <dt>MY ORDER</dt>
-                        <dd>
+                        <dt class="fnb_title">MY ORDER</dt>
+                        <dd class="fnb_contents">
                             <a href="#">주문배송</a>
                             <a href="#">취소/교환/반품 내역</a>
                             <a href="#">상품리뷰 내역</a>
@@ -1778,14 +1782,14 @@
                         </dd>
                     </dl>
                     <dl>
-                        <dt>MY ACCOUNT</dt>
-                        <dd>
+                        <dt class="fnb_title">MY ACCOUNT</dt>
+                        <dd class="fnb_contents">
                             <a href="#">회원정보수정</a>
                             <a href="#">회원등급</a>
                             <a href="#">마일리지현황</a>
                             <a href="#">쿠폰</a>
                         </dd>
-                    </dl>
+                    </dl>gi
                 </div>
             </div>
             <!-- 푸터 3행 -->
