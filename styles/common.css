@@ -31,13 +31,16 @@
 .all .m_menu a {}
 .all .m_menu a span {}
 /* 헤더 */
-.all header {width: 100%; height: 263px; margin: 0 auto;}
+.all header {
+    width: 100%; height: 263px; margin: 0 auto;
+    padding: 30px;
+}
 /* 헤더 1행 로고 + 개인메뉴 */
 /* 로고 */
 .all header .header_top {
     display: flex; justify-content: space-between; align-items: center;
     height: 78px; 
-    background-color: aqua;
+    background-color: aqua; margin-bottom: 20px;
 }
 .all header .header_top h1 {}
 .all header .header_top h1 a {}
@@ -60,9 +63,11 @@
 .all header .header_center {
     display: flex;
     background-color: bisque;
+    margin-bottom: 10px;
 }
 .all header .header_center .post {}
-.all header .header_center .post a {font-size: 1.75rem;}
+.all header .header_center .post a {font-size: 2.5rem; margin-right: 20px;}
+.all header .header_center .post a:last-child {margin-right: 0;}
 /* 검색 */
 .all header .header_center .search {}
 /* 검색 아이콘- 펼치기 전 */
@@ -86,12 +91,13 @@
 .all header .header_center .search #search_open_page #search_keywords .keywords .keywords_contents a {}
 /* 헤더 3행 네비게이션 메뉴 */
 .all header .header_btm {
-    display: flex; justify-content: space-between;
+    display: flex; 
     background-color: chartreuse;
 }
 .all header .header_btm .gnb {display: flex;}
-.all header .header_btm .gnb li {}
-.all header .header_btm .gnb li > a {margin-left: 10px; font-size: 0.813rem;}
+.all header .header_btm .gnb li {margin-right: 20px;}
+/* .all header .header_btm .gnb li:last-child {margin-right: 0;} */
+.all header .header_btm .gnb li > a {}
 /* depth1 */
 .all header .header_btm .gnb li .lnb_depth1 {display: none;}
 .all header .header_btm .gnb li .lnb_depth1 ul {}
@@ -114,34 +120,71 @@
 .all header .header_btm .gnb li .event_box .event_btm img {}
 /* 이벤트, 룩북 메뉴 */
 .all header .header_btm .event_lookbook {}
-.all header .header_btm .event_lookbook a {}
+.all header .header_btm .event_lookbook::before {
+    content:''; display: inline-block;
+    width: 1px; height:15px; background-color: #a0a0a0;
+    margin: 0px 10px 0 7px; 
+}
+.all header .header_btm .event_lookbook a {margin-left: 20px; color: #a0a0a0;}
 /* 푸터 */
 .all footer {}
 /* 푸터 1행 */
-.all footer .voc {}
+.all footer .voc {
+    margin-bottom: 20px;
+    display: flex; justify-content: space-between;
+}
 /* 고객센터 정보 */
 .all footer .voc_left {}
-.all footer .voc_left p {}
-.all footer .voc_left #tel {}
-.all footer .voc_left .voc_btn {}
-.all footer .voc_left .voc_btn a {}
-.all footer .voc_left .voc_btn a span {}
+.all footer .voc_left p {font-size: 0.75rem;}
+.all footer .voc_left #tel {font-size: 0.938rem;}
+.all footer .voc_left .voc_btn {
+    display: flex;
+}
+.all footer .voc_left .voc_btn a {
+    background-color: #000; padding: 10px 25px; margin-right: 10px;
+    display: block;
+}
+.all footer .voc_left .voc_btn a span {font-size: 0.938rem; color: #fff;}
 .all footer .voc_left .voc_btn a img {}
 /* 미디어 바로가기 */
 .all footer .voc_right {}
 .all footer .voc_right a {}
-.all footer .voc_right a img {}
+.all footer .voc_right a img {
+    width: 30px;
+}
 /* 푸터 2행 */
-.all footer .fnb {}
+.all footer .fnb {
+    display: flex; justify-content: space-between;
+    margin-bottom: 20px;
+}
 .all footer .fnb dl {}
-.all footer .fnb dl .fnb_title {}
+.all footer .fnb dl .fnb_title {
+    font-size: 0.813rem;
+}
 .all footer .fnb dl .fnb_contents {}
-.all footer .fnb dl .fnb_contents a {}
+.all footer .fnb dl .fnb_contents a {
+    display: block; font-size: 0.75rem;
+}
+.all footer .fnb .right {display: flex;}
+.all footer .fnb .right dl {}
+.all footer .fnb .right dl .fnb_title {font-size: 0.813rem;}
+.all footer .fnb .right dl .fnb_contents {}
+.all footer .fnb .right dl .fnb_contents a {
+    font-size: 0.75rem;
+}
 /* 푸터 3행 */
 .all footer .law_address {}
 .all footer .law_address .laws {}
-.all footer .law_address .laws a {}
-.all footer .law_address .btm {}
-.all footer .law_address .btm address {}
-.all footer .law_address .btm address a {}
+.all footer .law_address .laws a {
+    font-size: 0.75rem;
+}
+.all footer .law_address .btm {
+    display: flex; justify-content: space-between;
+}
+.all footer .law_address .btm address {
+    font-size: 0.625rem;
+}
+.all footer .law_address .btm address a {
+    font-size: 0.625rem;
+}
 .all footer .law_address .btm .btm_right {}

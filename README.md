@@ -93,15 +93,17 @@
 1. 구글폰트에 'campton', 'Apple SD Gothic Neo' 글꼴이 없어 당황스러움.
 2. font-awesome 적용 안됨.. 이유 알아내기.
 3. nav depth1,2 선택자가 이상함, display:none 적용했을 때 일부는 없어지고 일부는 남아있음. -> 남아있는 메뉴들 클래스 이름 오타 있었음, 수정.
+4. 메인 1열 배너들 사이 공백 생김 왜?
 --------
 ## 스타일가이드
 1. font-family: 'campton','Apple SD Gothic Neo', NanumBarunGothic, '나눔바른고딕', Malgun Gothic, '맑은 고딕', dotum, sans-serif;
 2. color : 글씨 #000000, #ffffff  / 강조글씨 #ff4800
-보더 라인 #d4d4d4 / 박스 1 좋아요 숫자 #5d5d5d
-3. font-size: 헤더 2행 1.75rem, 헤더 3행 0.813rem/ 상단 15% 팝업 0.75rem
+보더 라인 #d4d4d4 / 박스 1 좋아요 숫자 #5d5d5d / 헤더 2행 #a0a0a0
+3. font-size: 헤더 2행 2.5rem, 헤더 3행 1rem/ 상단 15% 팝업 0.75rem
 메인 박스 제목 1.375rem, 내용 0.938rem / 
 박스1 상품정보 0.688rem / 박스 3 숫자 전체 1.875rem, 숫자 현재 2.813rem 
 메인 아래 more 버튼 0.75rem
-푸터 전화번호 0.938rem / 영업시간 0.75rem / fnb 제목 0.813rem, 내용 0.75rem
+푸터 전화번호 0.938rem / 영업시간 0.75rem / 링크 0.938rem
+fnb 제목 0.813rem, 내용 0.75rem
 법률 링크 0.75rem adress내용 0.625rem
 
