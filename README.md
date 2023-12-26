@@ -90,10 +90,13 @@
 * css 레이아웃 시작
 * 잘못한 부분 아까워하지 말고 빨리 빼버리기.
 ### [오늘의 의문] 
-1. 구글폰트에 'campton', 'Apple SD Gothic Neo' 글꼴이 없어 당황스러움.
+1. 구글폰트에 'campton', 'Apple SD Gothic Neo' 글꼴이 없어 당황스러움. -> da-font에서 다운로드 후 font-face로 연결하여 해결했지만 굵기 조절 안 되어 당황스러움. 
 2. font-awesome 적용 안됨.. 이유 알아내기.
 3. nav depth1,2 선택자가 이상함, display:none 적용했을 때 일부는 없어지고 일부는 남아있음. -> 남아있는 메뉴들 클래스 이름 오타 있었음, 수정.
 4. 메인 1열 배너들 사이 공백 생김 왜?
+5. 헤더 1행 개인메뉴 스프라이트 적용시 크기 조절 불가, 메뉴 이름과 나란히 배치 불가
+6. box타입 3 슬라이드 묶음 display:none 적용불가.. 왜?
+7. box타입 1 상품 이미지에 크기 적용 불가.. 왜?????
 --------
 ## 스타일가이드
 1. font-family: 'campton','Apple SD Gothic Neo', NanumBarunGothic, '나눔바른고딕', Malgun Gothic, '맑은 고딕', dotum, sans-serif;

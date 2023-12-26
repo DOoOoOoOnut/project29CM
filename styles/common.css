@@ -40,20 +40,33 @@
 .all header .header_top {
     display: flex; justify-content: space-between; align-items: center;
     height: 78px; 
-    background-color: aqua; margin-bottom: 20px;
+    /* background-color: aqua; margin-bottom: 20px; */
 }
 .all header .header_top h1 {}
 .all header .header_top h1 a {}
 .all header .header_top h1 a img {width: 90px;}
 /* 개인메뉴- 데스크탑 */
-.all header .header_top .user_menu {}
-.all header .header_top .user_menu a {
-    /* background-image: url(../images/main/sp_29cm.png); */
-    background-color: black;
+.all header .header_top .user_menu {
+    display: flex;
 }
-.all header .header_top .user_menu a span {}
+.all header .header_top .user_menu a {
+    background-image: url(../images/main/sp_29cm.png);
+    width: 46px; height: 46px;
+    display: flex;
+}
+.all header .header_top .user_menu a:nth-child(1) {background-position: 6px 0;}
+.all header .header_top .user_menu a:nth-child(2) {background-position: -44px 0;}
+.all header .header_top .user_menu a:nth-child(3) {background-position: -94px 0;}
+.all header .header_top .user_menu a:nth-child(4) {background-position: -143px 0;}
+.all header .header_top .user_menu a span {
+    display: inline-block;
+}
+.all header .header_top .user_menu a .sprite1 {
+    display: inline-block;
+    
+}
 /* 개인메뉴 - 태블릿, 모바일 */
-.all header .header_top .m_user_menu {}
+.all header .header_top .m_user_menu {display: none;}
 .all header .header_top .m_user_menu a {
     /* background-image: url(../images/main/sp_29cm.png); */
     background-color: black;
@@ -62,16 +75,21 @@
 /* 메뉴 2행 */
 .all header .header_center {
     display: flex;
-    background-color: bisque;
+    /* background-color: bisque; */
     margin-bottom: 10px;
 }
 .all header .header_center .post {}
-.all header .header_center .post a {font-size: 2.5rem; margin-right: 20px;}
+.all header .header_center .post a {font-size: 2.5rem; margin-right: 20px; }
 .all header .header_center .post a:last-child {margin-right: 0;}
 /* 검색 */
 .all header .header_center .search {}
 /* 검색 아이콘- 펼치기 전 */
-.all header .header_center .search #search_open_btn {}
+.all header .header_center .search #search_open_btn {
+    background-image: url(../images/main/sp_29cm.png);
+    background-color: #000;
+    width: 47px; height: 47px;
+    
+}
 /* 검색창 + 인기검색어 - 펼쳐진 창 */
 /* 검색창 */
 .all header .header_center .search #search_open_page {display: none;}
@@ -92,12 +110,14 @@
 /* 헤더 3행 네비게이션 메뉴 */
 .all header .header_btm {
     display: flex; 
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
 }
 .all header .header_btm .gnb {display: flex;}
 .all header .header_btm .gnb li {margin-right: 20px;}
 /* .all header .header_btm .gnb li:last-child {margin-right: 0;} */
-.all header .header_btm .gnb li > a {}
+.all header .header_btm .gnb li > a {
+    font-size: 0.875rem;
+}
 /* depth1 */
 .all header .header_btm .gnb li .lnb_depth1 {display: none;}
 .all header .header_btm .gnb li .lnb_depth1 ul {}
@@ -125,7 +145,11 @@
     width: 1px; height:15px; background-color: #a0a0a0;
     margin: 0px 10px 0 7px; 
 }
-.all header .header_btm .event_lookbook a {margin-left: 20px; color: #a0a0a0;}
+.all header .header_btm .event_lookbook a {
+    margin-left: 20px; color: #a0a0a0;
+    font-family:"capton_l"; font-size: 0.875rem;
+    font-style: italic;
+}
 /* 푸터 */
 .all footer {}
 /* 푸터 1행 */

@@ -16,7 +16,6 @@ address,details,mark,time,img,summary,iframe,div {
     color: #000000;
     text-decoration: none;
     letter-spacing: -0.4px;
-    font-family: 'Nanum Gothic', sans-serif;
 }
 /* 목록 태그의 스타일 지우기 */
 ul,ol,li {list-style: none;}
@@ -30,3 +29,12 @@ input, select, option {background: none; border: 0;}
 .skip {display: none;}
 /* font-awesome unicode 전용 class */
 .fa {font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands'; font-weight: 600;}
+@font-face {
+    font-family: "capton_b";
+    src: url("../fonts/Campton-BoldDEMO.woff");
+}
+@font-face {
+    font-family: "capton_l";
+    src: url("../fonts/Campton-LightDEMO.woff");
+}
+body {font-family:"capton_b";}
