@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <div class="all">
@@ -14,8 +15,8 @@
         <div class="pop_top">
             <!-- 데스크탑, 태블릿 -->
             <div class="pop_all"> <!-- font-awesome -->
-                <a href="#">29CM신규가입 앱<span>15%</span>쿠폰</a>
-                <a href="#">[카카오페이]6만원 이상<span>2천원</span>선착순 즉시할인</a>
+                <a href="#">29CM신규가입 앱<em>15%</em>쿠폰</a>
+                <a href="#">[카카오페이]6만원 이상<em>2천원</em>선착순 즉시할인</a>
             </div>
             <!-- 모바일 -->
             <div class="pop_mobile"> <!-- font-awesome / 이미지 안보임.. 찾아서 넣기 -->
@@ -53,16 +54,15 @@
                 <!-- 개인메뉴 -->
                 <div class="user_menu">
                     <!-- 데스크탑 전용 -->
-                    <a href="#"><img src="./images/main/sp_29cm.png" alt=""><span>MY PAGE</span></a>
-                    <a href="#"><img src="./images/main/sp_29cm.png" alt=""><span>MY LIKE</span></a>
-                    <a href="#"><img src="./images/main/sp_29cm.png" alt=""><span>SHOPPING BAG</span></a>
-                    <a href="#"><img src="./images/main/sp_29cm.png" alt=""><span>LOGOUT</span></a>
+                    <a href="#"><span>MY PAGE</span></a>
+                    <a href="#"><span>MY LIKE</span></a>
+                    <a href="#"><span>SHOPPING BAG</span></a>
+                    <a href="#"><span>LOGOUT</span></a>
                     <!-- 태블릿, 모바일 -->
                     <div class="m_user_menu">
-                        <a href="#"><img src="./images/main/sp_29cm.png" alt="검색하기"></a>
-                        <a href="#"><img src="./images/main/sp_29cm.png" alt="장바구니"></a>
+                        <a href="#" title="검색하기"></a>
+                        <a href="#" title="장바구니"></a>
                     </div>
-                    <!-- <a href="#"><img src="./images/main/sp_29cm.png" alt="카테고리"></a> -->
                 </div>
             </div>
             <!-- 헤더 2행 메뉴 2행 + 검색 -->
@@ -75,7 +75,7 @@
                 </div>
                 <div class="search">
                     <!-- 검색 아이콘 - 펼치기 전 -->
-                    <a href="#" id="search_open_btn"><img src="./images/main/sp_29cm.png" alt="검색하기"></a>
+                    <a href="#" id="search_open_btn"></a>
                     <!-- 검색창 + 인기검색어 - 펼쳐진 창-->
                     <div id="search_open_page">
                         <a href="./index.html" id="back_search_btn"></a>
@@ -85,7 +85,7 @@
                                 <fieldset>
                                     <legend class="skip">검색</legend>
                                     <input type="search" name="search" class="search_bar" placeholder="Search">
-                                    <button type="submit" name="search_icon" id="search_btn"><img src="./images/main/sp_29cm.png" alt="검색하기"></button>
+                                    <button type="submit" name="search_icon" id="search_btn"></button>
                                 </fieldset>
                             </form>
                             <!-- 인기검색어 -->
@@ -260,7 +260,7 @@
                     </li>
                     <!-- INTERIOR -->
                     <li><a href="#">INTERIOR</a>
-                        <div class="class=lnb_depth1">
+                        <div class=lnb_depth1>
                             <ul>
                                 <li><a href="#">가구,인테리어</a><!-- 14개 -->
                                     <ul class="lnb_depth2">
@@ -504,7 +504,7 @@
             </nav>
         </header>
         <main>
-            <!-- 왼쪽 사진배너 행-->
+            <!-- 왼쪽 사진배너 열-->
             <div class="left"> <!-- 10개 -->
                 <ul class="bnr">
                     <li><a href="#"><img src="./images/main/bnr_01.jpg" alt=""></a></li>
@@ -519,8 +519,8 @@
                     <li><a href="#"><img src="./images/main/bnr_10.jpg" alt=""></a></li>
                 </ul>
             </div>
-            <!-- 오른쪽 2행 -->
-            <div class="right_boxs">
+            <!-- 오른쪽 2열 -->
+            <div class="right_boxes">
                 <!-- 오른쪽 첫째줄 -->
                 <div class="box"> <!-- 10개 내외 예정 -->
                     <!-- 맨 위 배너박스 -->
@@ -538,11 +538,11 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
@@ -555,11 +555,11 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
@@ -583,10 +583,10 @@
                     <div class="box_type3">
                         <h2>연말 룩을 고민 중이라면</h2>
                         <!-- 앞뒤 버튼, n/10 숫자 표시 -->
-                        <p class="type3_num">
-                            <a href="#" class="prev"><img src="" alt=""></a>
+                        <p class="type3_num_btn">
+                            <a href="#" class="pre"><img src="" alt=""></a>
                             <a href="#" class="next"><img src="" alt=""></a>
-                            <div class="type3_num_next">
+                            <div class="type3_num">
                                 <p class="num_current">1</p>
                                 <p class="num_all"><span>/</span>10</p>
                             </div>
@@ -598,7 +598,7 @@
                                 <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -606,10 +606,10 @@
                             </div>
                             <!-- 아이템 2 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl02.png" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -617,10 +617,10 @@
                             </div>
                             <!-- 아이템 3 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl03.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -628,10 +628,10 @@
                             </div>
                             <!-- 아이템 4-->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl04.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -639,10 +639,10 @@
                             </div>
                             <!-- 아이템 5 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl05.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -650,10 +650,10 @@
                             </div>
                             <!-- 아이템 6 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl06.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -661,10 +661,10 @@
                             </div>
                             <!-- 아이템 7 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl07.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -672,10 +672,10 @@
                             </div>
                             <!-- 아이템 8 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl08.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -683,10 +683,10 @@
                             </div>
                             <!-- 아이템 9 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl09.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -694,10 +694,10 @@
                             </div>
                             <!-- 아이템 10 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl10.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -716,11 +716,11 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
@@ -733,15 +733,15 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
-                                <li class="btm_like"><a href="#">
+                                <li class="btm_like"><a href="#"><!-- fafont -->
                                         <img src="" alt="좋아요하기">
                                         <span>1,205</span>
                                     </a>
@@ -768,11 +768,11 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
@@ -785,11 +785,11 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
@@ -813,10 +813,10 @@
                     <div class="box_type3">
                         <h2>연말 룩을 고민 중이라면</h2>
                         <!-- 앞뒤 버튼, n/10 숫자 표시 -->
-                        <p class="type3_num">
-                            <a href="#" class="prev"><img src="" alt=""></a>
+                        <p class="type3_num_btn">
+                            <a href="#" class="pre"><img src="" alt=""></a>
                             <a href="#" class="next"><img src="" alt=""></a>
-                            <div class="type3_num_next">
+                            <div class="type3_num">
                                 <p class="num_current">1</p>
                                 <p class="num_all"><span>/</span>10</p>
                             </div>
@@ -828,7 +828,7 @@
                                 <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -836,10 +836,10 @@
                             </div>
                             <!-- 아이템 2 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl02.png" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -847,10 +847,10 @@
                             </div>
                             <!-- 아이템 3 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl03.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -858,10 +858,10 @@
                             </div>
                             <!-- 아이템 4-->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl04.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -869,10 +869,10 @@
                             </div>
                             <!-- 아이템 5 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl05.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -880,10 +880,10 @@
                             </div>
                             <!-- 아이템 6 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl06.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -891,10 +891,10 @@
                             </div>
                             <!-- 아이템 7 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl07.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -902,10 +902,10 @@
                             </div>
                             <!-- 아이템 8 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl08.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -913,10 +913,10 @@
                             </div>
                             <!-- 아이템 9 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl09.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -924,10 +924,10 @@
                             </div>
                             <!-- 아이템 10 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl10.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -946,11 +946,11 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
@@ -963,11 +963,11 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
@@ -983,10 +983,10 @@
                     <div class="box_type3">
                         <h2>연말 룩을 고민 중이라면</h2>
                         <!-- 앞뒤 버튼, n/10 숫자 표시 -->
-                        <p class="type3_num">
-                            <a href="#" class="prev"><img src="" alt=""></a>
+                        <p class="type3_num_btn">
+                            <a href="#" class="pre"><img src="" alt=""></a>
                             <a href="#" class="next"><img src="" alt=""></a>
-                            <div class="type3_num_next">
+                            <div class="type3_num">
                                 <p class="num_current">1</p>
                                 <p class="num_all"><span>/</span>10</p>
                             </div>
@@ -998,7 +998,7 @@
                                 <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1006,10 +1006,10 @@
                             </div>
                             <!-- 아이템 2 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl02.png" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1017,10 +1017,10 @@
                             </div>
                             <!-- 아이템 3 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl03.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1028,10 +1028,10 @@
                             </div>
                             <!-- 아이템 4-->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl04.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1039,10 +1039,10 @@
                             </div>
                             <!-- 아이템 5 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl05.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1050,10 +1050,10 @@
                             </div>
                             <!-- 아이템 6 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl06.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1061,10 +1061,10 @@
                             </div>
                             <!-- 아이템 7 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl07.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1072,10 +1072,10 @@
                             </div>
                             <!-- 아이템 8 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl08.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1083,10 +1083,10 @@
                             </div>
                             <!-- 아이템 9 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl09.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1094,10 +1094,10 @@
                             </div>
                             <!-- 아이템 10 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl10.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1123,11 +1123,11 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
@@ -1140,11 +1140,11 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
@@ -1167,11 +1167,11 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
@@ -1184,11 +1184,11 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
@@ -1204,10 +1204,10 @@
                     <div class="box_type3">
                         <h2>연말 룩을 고민 중이라면</h2>
                         <!-- 앞뒤 버튼, n/10 숫자 표시 -->
-                        <p class="type3_num">
-                            <a href="#" class="prev"><img src="" alt=""></a>
+                        <p class="type3_num_btn">
+                            <a href="#" class="pre"><img src="" alt=""></a>
                             <a href="#" class="next"><img src="" alt=""></a>
-                            <div class="type3_num_next">
+                            <div class="type3_num">
                                 <p class="num_current">1</p>
                                 <p class="num_all"><span>/</span>10</p>
                             </div>
@@ -1219,7 +1219,7 @@
                                 <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1227,10 +1227,10 @@
                             </div>
                             <!-- 아이템 2 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl02.png" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1238,10 +1238,10 @@
                             </div>
                             <!-- 아이템 3 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl03.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1249,10 +1249,10 @@
                             </div>
                             <!-- 아이템 4-->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl04.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1260,10 +1260,10 @@
                             </div>
                             <!-- 아이템 5 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl05.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1271,10 +1271,10 @@
                             </div>
                             <!-- 아이템 6 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl06.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1282,10 +1282,10 @@
                             </div>
                             <!-- 아이템 7 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl07.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1293,10 +1293,10 @@
                             </div>
                             <!-- 아이템 8 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl08.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1304,10 +1304,10 @@
                             </div>
                             <!-- 아이템 9 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl09.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1315,10 +1315,10 @@
                             </div>
                             <!-- 아이템 10 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl10.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1337,11 +1337,11 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
@@ -1354,11 +1354,11 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
@@ -1382,10 +1382,10 @@
                     <div class="box_type3">
                         <h2>연말 룩을 고민 중이라면</h2>
                         <!-- 앞뒤 버튼, n/10 숫자 표시 -->
-                        <p class="type3_num">
-                            <a href="#" class="prev"><img src="" alt=""></a>
+                        <p class="type3_num_btn">
+                            <a href="#" class="pre"><img src="" alt=""></a>
                             <a href="#" class="next"><img src="" alt=""></a>
-                            <div class="type3_num_next">
+                            <div class="type3_num">
                                 <p class="num_current">1</p>
                                 <p class="num_all"><span>/</span>10</p>
                             </div>
@@ -1397,7 +1397,7 @@
                                 <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1405,10 +1405,10 @@
                             </div>
                             <!-- 아이템 2 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl02.png" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1416,10 +1416,10 @@
                             </div>
                             <!-- 아이템 3 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl03.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1427,10 +1427,10 @@
                             </div>
                             <!-- 아이템 4-->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl04.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1438,10 +1438,10 @@
                             </div>
                             <!-- 아이템 5 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl05.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1449,10 +1449,10 @@
                             </div>
                             <!-- 아이템 6 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl06.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1460,10 +1460,10 @@
                             </div>
                             <!-- 아이템 7 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl07.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1471,10 +1471,10 @@
                             </div>
                             <!-- 아이템 8 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl08.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1482,10 +1482,10 @@
                             </div>
                             <!-- 아이템 9 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl09.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1493,10 +1493,10 @@
                             </div>
                             <!-- 아이템 10 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl10.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1523,11 +1523,11 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
@@ -1540,11 +1540,11 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
@@ -1560,10 +1560,10 @@
                     <div class="box_type3">
                         <h2>연말 룩을 고민 중이라면</h2>
                         <!-- 앞뒤 버튼, n/10 숫자 표시 -->
-                        <p class="type3_num">
-                            <a href="#" class="prev"><img src="" alt=""></a>
+                        <p class="type3_num_btn">
+                            <a href="#" class="pre"><img src="" alt=""></a>
                             <a href="#" class="next"><img src="" alt=""></a>
-                            <div class="type3_num_next">
+                            <div class="type3_num">
                                 <p class="num_current">1</p>
                                 <p class="num_all"><span>/</span>10</p>
                             </div>
@@ -1575,7 +1575,7 @@
                                 <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1583,10 +1583,10 @@
                             </div>
                             <!-- 아이템 2 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl02.png" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1594,10 +1594,10 @@
                             </div>
                             <!-- 아이템 3 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl03.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1605,10 +1605,10 @@
                             </div>
                             <!-- 아이템 4-->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl04.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1616,10 +1616,10 @@
                             </div>
                             <!-- 아이템 5 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl05.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1627,10 +1627,10 @@
                             </div>
                             <!-- 아이템 6 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl06.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1638,10 +1638,10 @@
                             </div>
                             <!-- 아이템 7 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl07.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1649,10 +1649,10 @@
                             </div>
                             <!-- 아이템 8 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl08.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1660,10 +1660,10 @@
                             </div>
                             <!-- 아이템 9 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl09.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1671,10 +1671,10 @@
                             </div>
                             <!-- 아이템 10 -->
                             <div class="type3_item">
-                                <a href="#" class="photo"><img src="./images/main/post_25-sl10.jpg" alt=""></a>
+                                <a href="#" class="photo"><img src="./images/main/post_25-sl01.jpg" alt=""></a>
                                 <div class="contents">
                                     <a href="#" class="type3_brand">무쿠앤에보니</a>
-                                    <a href="#">
+                                    <a href="#" class="name_price">
                                         <h2>Comfy Bag_Black</h2>
                                         <p><span>35%</span> 65,000<span>원</span></p>
                                     </a>
@@ -1693,11 +1693,11 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-1.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
@@ -1710,11 +1710,11 @@
                             <ul class="type1_btm_contents">
                                 <li class="btm_item">
                                     <a href="#" class="btm_item_left"><img src="./images/main/post_01-2.jpg" alt=""></a>
-                                    <div class="btm_item_right">
-                                        <a href="#" class="type1_brand">아페쎄</a>
+                                    <div class="item_right">
+                                        <a href="#" class="item_brand">아페쎄</a>
                                         <a href="#">
                                             <h3>(W) 아페쎄 로고 자수 맨트맨-네이비(COEZD F27561|AJ)</h3>
-                                            <p class="btm_price"><span>60%</span>102,000won</p>
+                                            <p class="item_price"><span>60%</span>102,000won</p>
                                         </a>  
                                     </div> 
                                 </li>
@@ -1728,6 +1728,7 @@
                     </div>
                 </div>
             </div>
+            <!-- 메인 하단 더보기 버튼 -->
             <div class="more_btn"><button type="button">MORE</button></div>
         </main>
         <!-- 푸터 -->
@@ -1789,7 +1790,7 @@
                             <a href="#">마일리지현황</a>
                             <a href="#">쿠폰</a>
                         </dd>
-                    </dl>gi
+                    </dl>
                 </div>
             </div>
             <!-- 푸터 3행 -->
