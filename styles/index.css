@@ -12,7 +12,9 @@
 width: 44%;}
 .all main .left .bnr {}
 .all main .left .bnr li {}
-.all main .left .bnr li a {}
+.all main .left .bnr li a {
+    display: flex;
+}
 .all main .left .bnr li a img {
     width: 100%;
 }
@@ -47,7 +49,7 @@ width: 44%;}
 .all main .right_boxes .box .box_type1 .type1_top .photo img {}
 .all main .right_boxes .box .box_type1 .type1_top h2 {
     font-size: 1.375rem; font-weight: 600;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .all main .right_boxes .box .box_type1 .type1_top .contents {
     font-size: 0.938rem; line-height: 24px;
@@ -56,26 +58,35 @@ width: 44%;}
 /* 타입 1 아래쪽 아이템 목록 */
 .all main .right_boxes .box .box_type1 .type1_btm {}
 .all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents {
-    display: flex;
+    display: flex; justify-content: space-between;
+    margin: 20px 0 10px;
+    border-top: 1px solid #d4d4d4;
 }
 /* 상품 사진, 브랜드, 이름 */
-.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_item {}
-.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_item .item_left {
-    display: inline-block;
+.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_item {
+    display: flex;
+    padding: 15px 0 10px; padding-left: 0;
+    width: 85%;
 }
-.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_item .item_left img {
+.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_item .item_left {
     
 }
-.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_item .item_right {}
+.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_item .item_left img {
+    width: 52px; margin-right: 20px;
+}
+.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_item .item_right {
+    display: flex; flex-flow: column nowrap; justify-content:center;
+}
 .all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_item .item_right .item_brand {
-    font-size: 0.688rem; 
+    font-size: 0.688rem; margin-bottom: 3px; letter-spacing: 0.2px;
 }
 .all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_item .item_right a {}
-.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_item .item_right a h3 {font-size: 0.688rem;}
-.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_item .item_right a .item_price {font-size: 0.688rem; color:#ff4800}
-.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_item .item_right a .item_price span {font-size: 0.688rem; color:#ff4800;}
+.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_item .item_right a h3 {font-size: 0.688rem; margin-bottom: 7px; letter-spacing: 0.2px;}
+.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_item .item_right a .item_price {font-size: 0.688rem; color:#ff4800;}
+.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_item .item_right a .item_price span {font-size: 0.688rem; color:#ff4800; margin-right: 5px;}
 /* 아이템 좋아요하기 */
-.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_like {
+.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_like { width: 15%;
+    display: flex; justify-content: center; align-items: center; border-left: 1px solid #d4d4d4;
 }
 .all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_like a {
     display: flex; flex-flow: column nowrap; text-align: center; 
@@ -83,7 +94,7 @@ width: 44%;}
 .all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_like a .fa-heart {
     color: #5d5d5d;
 }
-.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_like a span {font-size: 0.688rem; color: #5d5d5d;}
+.all main .right_boxes .box .box_type1 .type1_btm .type1_btm_contents .btm_like a span {font-size: 0.688rem; color: #5d5d5d; margin-top: 10px;}
 /* 박스 타입 2 --------------------------------------------- */
 .all main .right_boxes .box .box_type2 {padding: 0 50px; margin-bottom: 80px;}
 .all main .right_boxes .box .box_type2 a {}
@@ -93,7 +104,7 @@ width: 44%;}
 /* 박스2 제목, 내용 */
 .all main .right_boxes .box .box_type2 a h2 {
     font-size: 1.375rem; font-weight: 600;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .all main .right_boxes .box .box_type2 a .contents {
     font-size: 0.938rem; line-height: 24px;
@@ -101,20 +112,25 @@ width: 44%;}
 }
 /* 박스 타입 3 --------------------------------------------*/
 .all main .right_boxes .box .box_type3 {padding: 0 50px; margin-bottom: 80px;}
-.all main .right_boxes .box .box_type3 h2 {}
+.all main .right_boxes .box .box_type3 > h2 {
+    font-size: 1.375rem; font-weight: 600;
+}
 /* 앞뒤 버튼 */
 .all main .right_boxes .box .box_type3 .type3_num_btn {}
-.all main .right_boxes .box .box_type3 .type3_num_btn .pre {}
-.all main .right_boxes .box .box_type3 .type3_num_btn .pre img {}
+.all main .right_boxes .box .box_type3 .type3_num_btn .prev {}
+.all main .right_boxes .box .box_type3 .type3_num_btn .prev img {}
 .all main .right_boxes .box .box_type3 .type3_num_btn .next {}
 .all main .right_boxes .box .box_type3 .type3_num_btn .next img {}
 /* n/10 숫자 표시 */
-.all main .right_boxes .box .box_type3 .type3_num_btn .type3_num {}
+.all main .right_boxes .box .box_type3 .type3_num_btn .type3_num {
+}
 .all main .right_boxes .box .box_type3 .type3_num_btn .type3_num .num_current {}
 .all main .right_boxes .box .box_type3 .type3_num_btn .type3_num .num_all {}
 .all main .right_boxes .box .box_type3 .type3_num_btn .type3_num .num_all span {}
 /* 슬라이드되는 아이템 묶음 */
-.all main .right_boxes .box .box_type3 .type3_item_wrap {display: none;}
+.all main .right_boxes .box .box_type3 .type3_item_wrap {
+    display: flex;
+}
 /* 슬라이드되는 아이템 개별 */
 .all main .right_boxes .box .box_type3 .type3_item_wrap .type3_item {}
 /* 아이템 이미지 */

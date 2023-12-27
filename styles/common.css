@@ -1,13 +1,13 @@
 /* 전체 묶음 */
-.all {}
+.all {position: relative;}
 /* 헤더 상단 15% 팝업 */
 .all .pop_top {width: 100%; height: 40px; text-align: center; 
-    background-color: #000; padding: 10px 0;}
+    background-color: #000; padding: 10px 0; }
 /* 데스크탑, 태블릿용 */
 .all .pop_top .pop_all {}
-.all .pop_top .pop_all a {color:#fff; font-size: 0.75rem; margin-left: 10px;} /* 폰트 적용 후 자간 조절 */
+.all .pop_top .pop_all a {color:#fff; font-size: 0.75rem; margin-left: 10px; letter-spacing: 0.2px; display: inline-block;} /* 폰트 적용 후 자간 조절 */
 .all .pop_top .pop_all a::after {content:\f054; color: #fff;} /* 왜 안되지????? */
-.all .pop_top .pop_all a em {color: #ff4800; font-size: 0.75rem;}
+.all .pop_top .pop_all a em {color: #ff4800; font-size: 0.75rem; letter-spacing: 0.2px;}
 /* 모바일전용 */
 .all .pop_top .pop_mobile {display: none;}
 .all .pop_top .pop_mobile p {}
@@ -51,8 +51,6 @@
 }
 .all header .header_top .user_menu a {
     display: flex; 
-    margin-right: 10px; font-family: "capton_l"; font-size: 0.563rem;
-    color: #5d5d5d; 
 }
 .all header .header_top .user_menu a::before {
     content:'';
@@ -62,7 +60,9 @@
     width: 17px; height: 17px;
     margin-right: 5px;
 }
-.all header .header_top .user_menu a:nth-child(1):before {}
+.all header .header_top .user_menu a:nth-child(1):before {
+    background-position: 0 -1px;
+}
 .all header .header_top .user_menu a:nth-child(2):before {
     background-position: -25px 0;
 }
@@ -71,6 +71,11 @@
 }
 .all header .header_top .user_menu a:nth-child(4):before {
     background-position: -75px 0;
+}
+.all header .header_top .user_menu a span {
+    display: flex; align-items: center; padding-top: 3px;
+    margin-right: 10px; font-family: "capton_l"; font-size: 0.563rem;
+    color: #5d5d5d; letter-spacing: 0.5px;
 }
 /* 개인메뉴 - 태블릿, 모바일 */
 .all header .header_top .m_user_menu {display: none;}
@@ -84,25 +89,34 @@
     display: flex; justify-content: space-between;
     /* background-color: bisque; */
     margin-bottom: 20px;
+    width: 100%;
 }
 .all header .header_center .post {}
 .all header .header_center .post a {font-size: 2.5rem; margin-right: 20px; }
 .all header .header_center .post a:last-child {margin-right: 0;}
 /* 검색 */
-.all header .header_center .search {}
+.all header .header_center .search {
+    background-color: antiquewhite;
+    width: 100%;
+}
 /* 검색 아이콘- 펼치기 전 */
-.all header .header_center .search #search_open_btn {
+/* .all header .header_center .search #search_open_btn {
     display: block;
     background-image: url(../images/main/sp_29cm.png); background-size: 200px;
     background-position: -76px -25px;
     width: 47px; height: 47px;
-}
+} */
 /* 검색창 + 인기검색어 - 펼쳐진 창 */
 /* 검색창 */
-.all header .header_center .search #search_open_page {display: none;}
+.all header .header_center .search #search_open_page {
+    position: absolute; left: 0; top: 0;
+    width: 5000px; height: 100vh; z-index: 100;
+    background-color:aqua;
+    display: flex;
+}
 .all header .header_center .search #search_open_page #back_search_btn {}
 .all header .header_center .search #search_open_page #search_keywords {}
-.all header .header_center .search #search_open_page #search_keywords #search_frm {}
+.all header .header_center .search #search_open_page #search_keywords #search_frm {background-color: bisque;}
 .all header .header_center .search #search_open_page #search_keywords #search_frm fieldset {}
 .all header .header_center .search #search_open_page #search_keywords #search_frm fieldset .search_bar {}
 .all header .header_center .search #search_open_page #search_keywords #search_frm fieldset .search_btn {
@@ -111,9 +125,9 @@
 }
 /* 인기검색어 */
 .all header .header_center .search #search_open_page #search_keywords .keywords {}
-.all header .header_center .search #search_open_page #search_keywords .keywords .keywords_title {}
+.all header .header_center .search #search_open_page #search_keywords .keywords .keywords_title {font-size: 1.5rem;}
 .all header .header_center .search #search_open_page #search_keywords .keywords .keywords_contents {}
-.all header .header_center .search #search_open_page #search_keywords .keywords .keywords_contents a {}
+.all header .header_center .search #search_open_page #search_keywords .keywords .keywords_contents a {display: inline-block;}
 /* 헤더 3행 네비게이션 메뉴 */
 .all header .header_btm {
     /* background-color: chartreuse; */
@@ -122,21 +136,15 @@
 }
 .all header .header_btm .gnb {
     position: relative;
-    display: flex;}
+    display: flex;
+    /* background-color: aqua; */
+}
 .all header .header_btm .gnb li {
     margin-right: 20px;}
 /* .all header .header_btm .gnb li:last-child {margin-right: 0;} */
 .all header .header_btm .gnb li > a {}
 /* 메뉴 열린 부분 */
 /* depth1 */
-.all header .header_btm .gnb li:nth-child(2) .lnb_depth1 {
-    position: absolute; left: 0; top: 30px; z-index:100;
-    width: 100%; display: none;
-    background-color: aqua;
-}
-.all header .header_btm .gnb li:nth-child(2) .lnb_depth1 ul {
-    display: flex;
-}
 .all header .header_btm .gnb li .lnb_depth1 {display: none;}
 .all header .header_btm .gnb li .lnb_depth1 ul {}
 .all header .header_btm .gnb li .lnb_depth1 ul li {}
@@ -157,13 +165,16 @@
 .all header .header_btm .gnb li .event_box .event_btm span {}
 .all header .header_btm .gnb li .event_box .event_btm img {}
 /* 이벤트, 룩북 메뉴 */
-.all header .header_btm .event_lookbook {}
+.all header .header_btm .event_lookbook {
+    display: flex;
+    /* background-color: chartreuse; */
+}
 .all header .header_btm .event_lookbook::before {
     content:''; display: inline-block;
-    width: 1px; height:15px; background-color: #a0a0a0;
-    margin: 0px 10px 0 7px; 
+    width: 1px; height:20px; background-color: #a0a0a0;
 }
 .all header .header_btm .event_lookbook a {
+    display: inline-block;
     margin-left: 20px; color: #a0a0a0;
     font-family:"capton_l"; font-size: 0.875rem;
     font-style: italic;
