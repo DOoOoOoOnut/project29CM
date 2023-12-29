@@ -1,3 +1,8 @@
+/* 전체 너비 조정 */
+/* body {
+    width: 100%;
+    overflow-x: hidden;
+} */
 /* 전체 묶음 */
 .all {position: relative;}
 /* 헤더 상단 15% 팝업 */
@@ -107,27 +112,39 @@
     width: 47px; height: 47px;
 }
 /* 검색창 + 인기검색어 - 펼쳐진 창 */
+/* 배경 */
+.all header .header_center .search #search_open_page {
+    position: fixed; z-index: 999;
+    left: 0; top: 0; width: 100%; height: 100vh;
+    background: rgba(255, 255, 255, 0.7);
+}
 /* 검색창 */
 .all header .header_center .search #search_open_page {
     position: absolute; left: 0; top: 0;
-    width: 5000px; height: 100vh; z-index: 100;
-    background-color:aqua;
-    display: none;
+    width: 100%; height: 100vh; z-index: 100;
+    /* display: none; */
+    text-align: right;
 }
 .all header .header_center .search #search_open_page #back_search_btn {}
 .all header .header_center .search #search_open_page #search_keywords {}
 .all header .header_center .search #search_open_page #search_keywords #search_frm {background-color: bisque;}
 .all header .header_center .search #search_open_page #search_keywords #search_frm fieldset {}
-.all header .header_center .search #search_open_page #search_keywords #search_frm fieldset .search_bar {}
+.all header .header_center .search #search_open_page #search_keywords #search_frm fieldset .search_bar {
+    color: #ff4800;
+}
 .all header .header_center .search #search_open_page #search_keywords #search_frm fieldset .search_btn {
     /* background-image: url(../images/main/sp_29cm.png); */
     background-color: black;
 }
+
 /* 인기검색어 */
-.all header .header_center .search #search_open_page #search_keywords .keywords {}
+.all header .header_center .search #search_open_page #search_keywords .keywords {background-color: #ff4800;}
 .all header .header_center .search #search_open_page #search_keywords .keywords .keywords_title {font-size: 1.5rem;}
-.all header .header_center .search #search_open_page #search_keywords .keywords .keywords_contents {}
-.all header .header_center .search #search_open_page #search_keywords .keywords .keywords_contents a {display: inline-block;}
+.all header .header_center .search #search_open_page #search_keywords .keywords .keywords_contents {
+}
+.all header .header_center .search #search_open_page #search_keywords .keywords .keywords_contents a {
+    display: block;
+}
 /* 헤더 3행 네비게이션 메뉴 */
 .all header .header_btm {
     /* background-color: chartreuse; */
