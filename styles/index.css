@@ -116,7 +116,9 @@ width: 44%;}
     font-size: 1.375rem; font-weight: 600;
 }
 /* 앞뒤 버튼 */
-.all main .right_boxes .box .box_type3 .type3_num_btn {}
+.all main .right_boxes .box .box_type3 .type3_num_btn {
+    display: none;
+}
 .all main .right_boxes .box .box_type3 .type3_num_btn .prev {}
 .all main .right_boxes .box .box_type3 .type3_num_btn .prev img {}
 .all main .right_boxes .box .box_type3 .type3_num_btn .next {}
@@ -124,25 +126,28 @@ width: 44%;}
 /* n/10 숫자 표시 */
 .all main .right_boxes .box .box_type3 .type3_num_btn .type3_num {
 }
-.all main .right_boxes .box .box_type3 .type3_num_btn .type3_num .num_current {}
-.all main .right_boxes .box .box_type3 .type3_num_btn .type3_num .num_all {}
+.all main .right_boxes .box .box_type3 .type3_num_btn .type3_num .num_current {font-size: 2.813rem;}
+.all main .right_boxes .box .box_type3 .type3_num_btn .type3_num .num_all {font-size: 1.875rem;}
 .all main .right_boxes .box .box_type3 .type3_num_btn .type3_num .num_all span {}
 /* 슬라이드되는 아이템 묶음 */
-.all main .right_boxes .box .box_type3 .type3_item_wrap {
-    display: flex;
-}
+.all main .right_boxes .box .box_type3 .type3_item_wrap {}
 /* 슬라이드되는 아이템 개별 */
-.all main .right_boxes .box .box_type3 .type3_item_wrap .type3_item {}
+.all main .right_boxes .box .box_type3 .type3_item_wrap .type3_item {
+    display: none;
+}
+.all main .right_boxes .box .box_type3 .type3_item_wrap .type3_item:nth-child(1) {display: block;}
 /* 아이템 이미지 */
 .all main .right_boxes .box .box_type3 .type3_item_wrap .type3_item .photo {}
 .all main .right_boxes .box .box_type3 .type3_item_wrap .type3_item .photo img {}
 /* 아이템 브랜드, 이름, 가격 정보 */
 .all main .right_boxes .box .box_type3 .type3_item_wrap .type3_item .contents {}
-.all main .right_boxes .box .box_type3 .type3_item_wrap .type3_item .contents .type3_brand {}
+.all main .right_boxes .box .box_type3 .type3_item_wrap .type3_item .contents .type3_brand {font-size: 0.813rem; text-decoration: underline;}
 .all main .right_boxes .box .box_type3 .type3_item_wrap .type3_item .contents .name_price {}
-.all main .right_boxes .box .box_type3 .type3_item_wrap .type3_item .contents .name_price h2 {}
-.all main .right_boxes .box .box_type3 .type3_item_wrap .type3_item .contents .name_price p {}
-.all main .right_boxes .box .box_type3 .type3_item_wrap .type3_item .contents .name_price p span {}
+.all main .right_boxes .box .box_type3 .type3_item_wrap .type3_item .contents .name_price h2 {
+    font-size: 0.75rem; margin: 10px 0 15px;
+}
+.all main .right_boxes .box .box_type3 .type3_item_wrap .type3_item .contents .name_price p {color: #ff4800; font-size: 0.813rem;}
+.all main .right_boxes .box .box_type3 .type3_item_wrap .type3_item .contents .name_price p span {color: #ff4800; font-size: 0.813rem;}
 /* 메인 하단 더보기 버튼 */
 .all main .more_btn {
     position: absolute; left: 50%; bottom: 0; 

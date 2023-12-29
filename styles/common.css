@@ -96,23 +96,23 @@
 .all header .header_center .post a:last-child {margin-right: 0;}
 /* 검색 */
 .all header .header_center .search {
-    background-color: antiquewhite;
-    width: 100%;
+    /* background-color: antiquewhite; */
+    /* width: 100%; */
 }
 /* 검색 아이콘- 펼치기 전 */
-/* .all header .header_center .search #search_open_btn {
+.all header .header_center .search #search_open_btn {
     display: block;
     background-image: url(../images/main/sp_29cm.png); background-size: 200px;
     background-position: -76px -25px;
     width: 47px; height: 47px;
-} */
+}
 /* 검색창 + 인기검색어 - 펼쳐진 창 */
 /* 검색창 */
 .all header .header_center .search #search_open_page {
     position: absolute; left: 0; top: 0;
     width: 5000px; height: 100vh; z-index: 100;
     background-color:aqua;
-    display: flex;
+    display: none;
 }
 .all header .header_center .search #search_open_page #back_search_btn {}
 .all header .header_center .search #search_open_page #search_keywords {}
