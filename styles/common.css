@@ -6,7 +6,7 @@
 /* 데스크탑, 태블릿용 */
 .all .pop_top .pop_all {}
 .all .pop_top .pop_all a {color:#fff; font-size: 0.75rem; margin-left: 10px; letter-spacing: 0.2px; display: inline-block;} /* 폰트 적용 후 자간 조절 */
-.all .pop_top .pop_all a::after {content:\f054; color: #fff;} /* 왜 안되지????? */
+.all .pop_top .pop_all a .fa-chevron-right {font-size: 0.5rem;}
 .all .pop_top .pop_all a em {color: #ff4800; font-size: 0.75rem; letter-spacing: 0.2px;}
 /* 모바일전용 */
 .all .pop_top .pop_mobile {display: none;}
@@ -180,7 +180,10 @@
     font-style: italic;
 }
 /* 푸터 */
-.all footer {width: 100%; padding: 0 40px;}
+.all footer {
+    width: 100%; padding: 0 40px; margin-top: 180px;
+    /* background-color: aqua; */
+}
 /* 푸터 1행 */
 .all footer .voc {
     padding: 20px 0;
