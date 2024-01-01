@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베스트 여성의류 - 감도 높은 취향 셀렉트샵, 29CM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="./images/favicon_29CM.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon_29CM.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/best.css">
+</head>
+<body>
+    <div class="all">
+        <!-- 15% 팝업 -->
+        <div class="pop_top">
+            <!-- 데스크탑, 태블릿 -->
+            <div class="pop_all"> <!-- font-awesome -->
+                <a href="#">29CM신규가입 앱<em>15%</em>쿠폰 <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="#">[카카오페이]6만원 이상<em>2천원</em>선착순 즉시할인 <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <!-- 모바일 -->
+            <div class="pop_mobile"> <!-- font-awesome / 이미지 안보임.. 찾아서 넣기 -->
+                <p><img src="" alt="">29cm 앱 설치하고<span>15%</span>혜택 받기</p>
+                <p>앱으로 보기</p>
+            </div>
+        </div>
+        <!-- 위로가기, 채팅버튼 -->
+        <div id="pop_btn"> <!-- font-awesome -->
+            <a href="#" id="go_top_btn"><img src="" alt=""></a>
+            <a href="#" id="chat_btn"><img src="" alt=""></a>
+        </div>
+        <!-- 모바일 전용/ 앱설치 쿠폰 팝업 -->
+        <div class="m_coupon_bg">
+            <div class="m_coupon"><!-- 이미지 넣기 -->
+                <h2>지금 앱을 설치하면<br>2장의 쿠폰을 선물하고 있어요</h2>
+                <p><img src="" alt=""></p>
+                <a href="#">첫구매용 앱 쿠폰받기</a>
+                <a href="#">오늘 하루 보지 않기</a>
+            </div>
+        </div>
+        <!-- 모바일 전용 하단 메뉴 -->
+        <div class="m_menu">
+            <a href="#"><img src="" alt=""><span>HOME</span></a>
+            <a href="#"><img src="" alt=""><span>SHOP</span></a>
+            <a href="#"><img src="" alt=""><span>WELOVE</span></a>
+            <a href="#"><img src="" alt=""><span>MY</span></a>
+        </div>
+        <header>
+            <!-- 헤더 1행 로고 + 개인메뉴 -->
+            <div class="header_top">
+                <!-- 로고 -->
+                <h1><a href="./index.html"><img src="./images/main/logo_black.png" alt="29CM"></a></h1>
+                <!-- 개인메뉴 -->
+                <div class="user_menu">
+                    <!-- 데스크탑 전용 -->
+                    <a href="#"><span>MY PAGE</span></a>
+                    <a href="#"><span>MY LIKE</span></a>
+                    <a href="#"><span>SHOPPING BAG</span></a>
+                    <a href="#"><span>LOGOUT</span></a>
+                    <!-- 태블릿, 모바일 -->
+                    <div class="m_user_menu">
+                        <a href="#" title="검색하기"></a>
+                        <a href="#" title="장바구니"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- 헤더 2행 메뉴 2행 + 검색 -->
+            <div class="header_center">
+                <div class="post"><!-- 메뉴 2행 -->
+                    <a href="#">Special-Order</a>
+                    <a href="#">Showcase</a>
+                    <a href="#">PT</a>
+                    <a href="#">Welove</a>
+                </div>
+                <div class="search">
+                    <!-- 검색 아이콘 - 펼치기 전 -->
+                    <a href="#" id="search_open_btn"></a>
+                    <!-- 검색창 + 인기검색어 - 펼쳐진 창-->
+                    <div id="search_open_page_bg"></div>
+                    <div id="search_open_page">
+                        <a href="./index.html" id="back_search_btn"></a>
+                        <div class="search_keywords">
+                            <!-- 검색창 -->
+                            <form action="#" method="get" id="search_frm"> 
+                                <fieldset>
+                                    <legend class="skip">검색</legend>
+                                    <input type="search" name="search" class="search_bar" placeholder="Search">
+                                    <button type="submit" name="search_icon" id="search_btn"></button>
+                                </fieldset>
+                            </form>
+                            <!-- 인기검색어 -->
+                            <div class="keywords">
+                                <h1 class="keywords_title">인기검색어</h1>
+                                <p class="keywords_contents">
+                                    <a href="#">리복</a>
+                                    <a href="#">newbalance</a>
+                                    <a href="#">salomon</a>
+                                    <a href="#">ugg</a>
+                                    <a href="#">장갑</a>
+                                    <a href="#">바라클라바</a>
+                                    <a href="#">니트</a>
+                                    <a href="#">목도리</a>
+                                    <a href="#">onitsuka tiger</a>
+                                    <a href="#">oofos</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 헤더 3행 네비게이션 -->
+            <nav class="header_btm">
+                <ul class="gnb">
+                    <!-- BEST -->
+                    <li><a href="#">BEST</a></li>
+                    <!-- WOMEN -->
+                    <li><a href="#">WOMEN</a>
+                        <div class="lnb_depth1">
+                            <ul>
+                                <li>
+                                    <a href="#">의류</a><!-- 10개 -->
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">EXCLUSIVE</a></li>
+                                        <li><a href="#">상의</a></li>
+                                        <li><a href="#">바지</a></li>
+                                        <li><a href="#">원피스</a></li>
+                                        <li><a href="#">스커트</a></li>
+                                        <li><a href="#">점프수트</a></li>
+                                        <li><a href="#">셋업</a></li>
+                                        <li><a href="#">액티브웨어</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">가방</a><!-- 10개 -->
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">EXCLUSIVE</a></li>
+                                        <li><a href="#">숄더백</a></li>
+                                        <li><a href="#">토트백</a></li>
+                                        <li><a href="#">크로스백</a></li>
+                                        <li><a href="#">에코,캔버스백</a></li>
+                                        <li><a href="#">백팩</a></li>
+                                        <li><a href="#">클러치</a></li>
+                                        <li><a href="#">파우치</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">신발</a><!-- 10개 -->
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">EXCLUSIVE</a></li>
+                                        <li><a href="#">해외브랜드</a></li>
+                                        <li><a href="#">플랫,로퍼</a></li>
+                                        <li><a href="#">부츠</a></li>
+                                        <li><a href="#">펌프스</a></li>
+                                        <li><a href="#">샌들</a></li>
+                                        <li><a href="#">슬리퍼,뮬</a></li>
+                                        <li><a href="#">스니커즈</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">액세서리</a><!-- 10개 -->
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">EXCLUSIVE</a></li>
+                                        <li><a href="#">해외브랜드</a></li>
+                                        <li><a href="#">주얼리</a></li>
+                                        <li><a href="#">모자</a></li>
+                                        <li><a href="#">시계</a></li>
+                                        <li><a href="#">지갑,카드케이스</a></li>
+                                        <li><a href="#">아이웨어</a></li>
+                                        <li><a href="#">벨트</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 이벤트박스 -->
+                        <div class="event_box">
+                            <a href="#" class="event_top">
+                                <div class="event_img"><img src="./images/main/nav_event_woman.jpg" alt=""></div>
+                                <p class="event_name">FOCUS:포 유어 아이즈 온리~20%</p>
+                            </a>
+                            <a href="#" class="event_btm">
+                                <span>이벤트 전체보기</span>
+                                <img src="" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <!-- MEN -->
+                    <li><a href="#">MEN</a>
+                        <div class="lnb_depth1">
+                            <ul>
+                                <li>
+                                    <a href="#">의류</a><!-- 10개 -->
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">EXCLUSIVE</a></li>
+                                        <li><a href="#">해외브랜드</a></li>
+                                        <li><a href="#">아우터</a></li>
+                                        <li><a href="#">상의</a></li>
+                                        <li><a href="#">하의</a></li>
+                                        <li><a href="#">셋업</a></li>
+                                        <li><a href="#">홈웨어</a></li>
+                                        <li><a href="#">이너웨어</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">가방</a><!-- 10개 -->
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">EXCLUSIVE</a></li>
+                                        <li><a href="#">해외브랜드</a></li>
+                                        <li><a href="#">크로스백</a></li>
+                                        <li><a href="#">웨이스트백</a></li>
+                                        <li><a href="#">토트백</a></li>
+                                        <li><a href="#">백팩</a></li>
+                                        <li><a href="#">숄더백</a></li>
+                                        <li><a href="#">랩탑백</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">신발</a><!-- 10개 -->
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">EXCLUSIVE</a></li>
+                                        <li><a href="#">해외브랜드</a></li>
+                                        <li><a href="#">스니커즈</a></li>
+                                        <li><a href="#">로퍼</a></li>
+                                        <li><a href="#">구두</a></li>
+                                        <li><a href="#">부츠</a></li>
+                                        <li><a href="#">샌들</a></li>
+                                        <li><a href="#">슈즈 액세서리</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">악세사리</a><!-- 10개 -->
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">EXCLUSIVE</a></li>
+                                        <li><a href="#">지갑,카드케이스</a></li>
+                                        <li><a href="#">해외브랜드</a></li>
+                                        <li><a href="#">모자</a></li>
+                                        <li><a href="#">시계</a></li>
+                                        <li><a href="#">아이웨어</a></li>
+                                        <li><a href="#">넥타이</a></li>
+                                        <li><a href="#">벨트</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- INTERIOR -->
+                    <li><a href="#">INTERIOR</a>
+                        <div class=lnb_depth1>
+                            <ul>
+                                <li><a href="#">가구,인테리어</a><!-- 14개 -->
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">비앤비이탈리아</a></li>
+                                        <li><a href="#">PREMIUM</a></li>
+                                        <li><a href="#">LIVING TASTE</a></li>
+                                        <li><a href="#">홈패브릭</a></li>
+                                        <li><a href="#">가구</a></li>
+                                        <li><a href="#">조명</a></li>
+                                        <li><a href="#">홈데코</a></li>
+                                        <li><a href="#">가드닝</a></li>
+                                        <li><a href="#">홈프레그런스</a></li>
+                                        <li><a href="#">아트,디자인</a></li>
+                                        <li><a href="#">책,음반</a></li>
+                                        <li><a href="#">스테이셔너리</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- KITCHEN -->
+                    <li><a href="#">KITCHEN</a>
+                        <div class="lnb_depth1">
+                            <ul>
+                                <li><a href="#">주방,생활</a><!-- 11개 -->
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">PREMIUM</a></li>
+                                        <li><a href="#">LIVING TASTE</a></li>
+                                        <li><a href="#">쿡웨어</a></li>
+                                        <li><a href="#">테이블웨어</a></li>
+                                        <li><a href="#">침구</a></li>
+                                        <li><a href="#">욕실</a></li>
+                                        <li><a href="#">수납,정리</a></li>
+                                        <li><a href="#">홈케어</a></li>
+                                        <li><a href="#">반려동물</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- ELECTRONICS -->
+                    <li><a href="#">ELECTRONICS</a>
+                        <div class="lnb_depth1">
+                            <ul>
+                                <li><a href="#">가전</a><!-- 11개 -->
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">영상가전</a></li>
+                                        <li><a href="#">주방가전</a></li>
+                                        <li><a href="#">세탁기,건조기</a></li>
+                                        <li><a href="#">청소기</a></li>
+                                        <li><a href="#">생활가전</a></li>
+                                        <li><a href="#">계절가전</a></li>
+                                        <li><a href="#">이미용가전</a></li>
+                                        <li><a href="#">건강가전</a></li>
+                                        <li><a href="#">리퍼브</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- DIGITAL -->
+                    <li><a href="#">DIGITAL</a>
+                        <div class="lnb_depth1">
+                            <ul>
+                                <li><a href="#">컴퓨터,디지털</a><!-- 9개 -->
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">음향기기</a></li>
+                                        <li><a href="#">모바일,웨어러블</a></li>
+                                        <li><a href="#">모바일 액세서리</a></li>
+                                        <li><a href="#">PC,노트북</a></li>
+                                        <li><a href="#">게임</a></li>
+                                        <li><a href="#">사진</a></li>
+                                        <li><a href="#">자동차용품,장난감</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- BEAUTY -->
+                    <li><a href="#">BEAUTY</a>
+                        <div class="lnb_depth1">
+                            <ul>
+                                <li><a href="#">뷰티</a><!-- 21개 -->
+                                    <ul class="lnb_depth2">
+                                        <!-- 1열 -->
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">선물세트</a></li>
+                                        <li><a href="#">스킨케어</a></li>
+                                        <li><a href="#">EXCLUSIVE</a></li>
+                                        <li><a href="#">채식주의</a></li>
+                                        <li><a href="#">친환경 패키지</a></li>
+                                        <!-- 2열 -->
+                                        <li><a href="#">자연유래</a></li>
+                                        <li><a href="#">바디케어</a></li>
+                                        <li><a href="#">헤어케어</a></li>
+                                        <li><a href="#">메이크업</a></li>
+                                        <li><a href="#">네일,디자인타투</a></li>
+                                        <li><a href="#">향수</a></li>
+                                        <li><a href="#">여성용품</a></li>
+                                        <!-- 3열 -->
+                                        <li><a href="#">뷰티기기,마스크</a></li>
+                                        <li><a href="#">남성뷰티</a></li>
+                                        <li><a href="#">스킨타입</a></li>
+                                        <li><a href="#">이너뷰티</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 이벤트박스 -->
+                        <div class="event_box">
+                            <a href="#" class="event_top">
+                                <div class="event_img"><img src="./images/main/nav_event_food.jpg" alt=""></div><!-- 이미지 임시 -->
+                                <p class="event_name">HIGHLIGHT : 한아조, 베이지크, SW19</p>
+                            </a>
+                            <a href="#" class="event_btm">
+                                <span>이벤트 전체보기</span>
+                                <img src="" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <!-- FOOD -->
+                    <li><a href="#">FOOD</a>
+                        <div class="lnb_depth1">
+                            <ul>
+                                <li><a href="#">푸드</a><!-- 6개 -->
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">선물세트</a></li>
+                                        <li><a href="#">음료</a></li>
+                                        <li><a href="#">가공식품</a></li>
+                                        <li><a href="#">신선,냉장</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 이벤트박스 -->
+                        <div class="event_box">
+                            <a href="#" class="event_top">
+                                <div class="event_img"><img src="./images/main/nav_event_food.jpg" alt=""></div>
+                                <p class="event_name">소중한 이에게 전하는 크리스마스 선물</p>
+                            </a>
+                            <a href="#" class="event_btm">
+                                <span>이벤트 전체보기</span>
+                                <img src="" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <!-- LEISURE -->
+                    <li><a href="#">LEISURE</a>
+                        <div class="lnb_depth1">
+                            <ul>
+                                <li><a href="#">레저</a><!-- 11개 -->
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">캠핑</a></li>
+                                        <li><a href="#">등산,하이킹</a></li>
+                                        <li><a href="#">골프</a></li>
+                                        <li><a href="#">수영</a></li>
+                                        <li><a href="#">러닝</a></li>
+                                        <li><a href="#">실내운동</a></li>
+                                        <li><a href="#">여행</a></li>
+                                        <li><a href="#">테니스</a></li>
+                                        <li><a href="#">자전거</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 이벤트박스 -->
+                        <div class="event_box">
+                            <a href="#" class="event_top">
+                                <div class="event_img"><img src="./images/main/nav_event_leisure.jpg" alt=""></div>
+                                <p class="event_name">모험가의 물건 EP.18 라코스테</p>
+                            </a>
+                            <a href="#" class="event_btm">
+                                <span>이벤트 전체보기</span>
+                                <img src="" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <!-- KIDS -->
+                    <li><a href="#">KIDS</a>
+                        <div class="lnb_depth1">
+                            <ul>
+                                <li><a href="#">유아,아동</a><!-- 5개 -->
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">의류</a></li>
+                                        <li><a href="#">신발,가방</a></li>
+                                        <li><a href="#">아동,홈</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- CULTURE -->
+                    <li><a href="#">CULTURE</a>
+                        <div class="lnb_depth1">
+                            <ul>
+                                <li><a href="#">컬쳐</a><!-- 6개 -->
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">숙박,여행</a></li>
+                                        <li><a href="#">티켓</a></li>
+                                        <li><a href="#">아트,디자인</a></li>
+                                        <li><a href="#">스테이셔너리</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 이벤트박스 -->
+                        <div class="event_box">
+                            <a href="#" class="event_top">
+                                <div class="event_img"><img src="./images/main/nav_event_culture.jpg" alt=""></div>
+                                <p class="event_name">[얼리버드]미셸 들라크루아,파리의 벨 에포크</p>
+                            </a>
+                            <a href="#" class="event_btm">
+                                <span>이벤트 전체보기</span>
+                                <img src="" alt="">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 이벤트, 룩북 메뉴 -->
+                <div class="event_lookbook">
+                    <a href="#">EVENT</a>
+                    <a href="#">LOOKBOOK</a>
+                </div>
+            </nav>
+        </header>
+        <!-- 메인 -->
+        <main>
+            <!-- 좌측 사이드메뉴 -->
+            <aside>
+                <h1>BEST</h1>
+                <div class="snb"><!-- 17개 -->
+                    <a href="#" class="active">여성의류</a>
+                    <a href="#">여성가방</a>
+                    <a href="#">여성신발</a>
+                    <a href="#">여성액세서리</a>
+                    <a href="#">남성의류</a>
+                    <a href="#">남성가방</a>
+                    <a href="#">남성신발</a>
+                    <a href="#">남성액세서리</a>
+                    <a href="#">주방,생활</a>
+                    <a href="#">가구,인테리어</a>
+                    <a href="#">뷰티</a>
+                    <a href="#">컴퓨터,디지털</a>
+                    <a href="#">가전</a>
+                    <a href="#">컬처</a>
+                    <a href="#">레저</a>
+                    <a href="#">유아,아동</a>
+                    <a href="#">푸드</a>
+                </div>
+            </aside>
+            <!-- 우측 상품 -->
+            <div class="right">
+                <!-- 우측 상단 필터+카테고리 -->
+                <section class="right_top">
+                    <h2>여성의류</h2>
+                    <!-- 카테고리 -->
+                    <div class="category"><!-- 14개 -->
+                        <a href="#" class="active">전체</a>
+                        <a href="#">아우터</a>
+                        <a href="#">상의</a>
+                        <a href="#">니트웨어</a>
+                        <a href="#">바지</a>
+                        <a href="#">원피스</a>
+                        <a href="#">스커트</a>
+                        <a href="#">홈웨어</a>
+                        <a href="#">셋업</a>
+                        <a href="#">액티브웨어</a>
+                        <a href="#">이너웨어</a>
+                        <a href="#">EXCLUSIVE</a>
+                        <a href="#">해외브랜드</a>
+                        <a href="#">점프수트</a>
+                    </div>
+                    <!-- 필터 -->
+                    <div class="filter">
+                        <a href="#" class="active">실시간</a>
+                        <a href="#">일간</a>
+                        <a href="#">주간</a>
+                        <a href="#">월간</a>
+                    </div>
+                </section>
+                <!-- 우측 하단 상품 목록 -->
+                <section class="right_btm">
+                    <!-- 랭킹 탑3 -->
+                    <div class="item_top3">
+                        <!-- 개별 상품 1 -->
+                        <div class="item">
+                            <!-- 사진 -->
+                            <a href="#" class="photo"><span class="rank">1</span><img src="./images/best/item_01.jpg" alt=""></a>
+                            <!-- 내용 -->
+                            <div class="contents">
+                                <a href="#" class="brand">리파인드902</a>
+                                <a href="#" class="info">
+                                    <h2>[29CM 단독]_Hairy Wool Duffle Half coat_Dark Navy</h2>
+                                    <div class="price_wrap">
+                                        <p class="discount_origin"></p>
+                                        <p class="price"><em class="discount_per">20%</em>351,200</p>
+                                    </div>
+                                </a>
+                                <div class="like_review">
+                                    <a href="#" class="like"><i class="fa-regular fa-heart"></i><span>4,676</span></a>
+                                    <a href="#" class="review"><i class="fa-regular fa-message"></i><span>6</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 개별 상품 2 -->
+                        <div class="item">
+                            <!-- 사진 -->
+                            <a href="#"><span class="rank">1</span><img src="./images/best/item_01.jpg" alt=""></a>
+                            <!-- 내용 -->
+                            <div class="contents">
+                                <a href="#" class="brand">리파인드902</a>
+                                <a href="#" class="info">
+                                    <h2>[29CM 단독]_Hairy Wool Duffle Half coat_Dark Navy</h2>
+                                    <div class="price_wrap">
+                                        <p class="discount_origin"></p>
+                                        <p class="price"><em class="discount_per">20%</em>351,200</p>
+                                    </div>
+                                </a>
+                                <div class="like_review">
+                                    <a href="#" class="like"><i class="fa-regular fa-heart"></i><span>4,676</span></a>
+                                    <a href="#" class="review"><i class="fa-regular fa-message"></i><span>6</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 개별 상품 3 -->
+                        <div class="item">
+                            <!-- 사진 -->
+                            <a href="#"><span class="rank">1</span><img src="./images/best/item_01.jpg" alt=""></a>
+                            <!-- 내용 -->
+                            <div class="contents">
+                                <a href="#" class="brand">리파인드902</a>
+                                <a href="#" class="info">
+                                    <h2>[29CM 단독]_Hairy Wool Duffle Half coat_Dark Navy</h2>
+                                    <div class="price_wrap">
+                                        <p class="discount_origin"></p>
+                                        <p class="price"><em class="discount_per">20%</em>351,200</p>
+                                    </div>
+                                </a>
+                                <div class="like_review">
+                                    <a href="#" class="like"><i class="fa-regular fa-heart"></i><span>4,676</span></a>
+                                    <a href="#" class="review"><i class="fa-regular fa-message"></i><span>6</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 랭킹 4~100 -->
+                    <div class="item_list">
+                        <!-- 개별 상품 -->
+                        <div class="item">
+                            <!-- 사진 -->
+                            <a href="#"><span class="rank">1</span><img src="./images/best/item_01.jpg" alt=""></a>
+                            <!-- 내용 -->
+                            <div class="contents">
+                                <a href="#" class="brand">리파인드902</a>
+                                <a href="#" class="info">
+                                    <h2>[29CM 단독]_Hairy Wool Duffle Half coat_Dark Navy</h2>
+                                    <div class="price_wrap">
+                                        <p class="discount_origin"></p>
+                                        <p class="price"><em class="discount_per">20%</em>351,200</p>
+                                    </div>
+                                </a>
+                                <div class="like_review">
+                                    <a href="#" class="like"><i class="fa-regular fa-heart"></i><span>4,676</span></a>
+                                    <a href="#" class="review"><i class="fa-regular fa-message"></i><span>6</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 개별 상품 -->
+                        <div class="item">
+                            <!-- 사진 -->
+                            <a href="#"><span class="rank">1</span><img src="./images/best/item_01.jpg" alt=""></a>
+                            <!-- 내용 -->
+                            <div class="contents">
+                                <a href="#" class="brand">리파인드902</a>
+                                <a href="#" class="info">
+                                    <h2>[29CM 단독]_Hairy Wool Duffle Half coat_Dark Navy</h2>
+                                    <div class="price_wrap">
+                                        <p class="discount_origin"></p>
+                                        <p class="price"><em class="discount_per">20%</em>351,200</p>
+                                    </div>
+                                </a>
+                                <div class="like_review">
+                                    <a href="#" class="like"><i class="fa-regular fa-heart"></i><span>4,676</span></a>
+                                    <a href="#" class="review"><i class="fa-regular fa-message"></i><span>6</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 개별 상품 -->
+                        <div class="item">
+                            <!-- 사진 -->
+                            <a href="#"><span class="rank">1</span><img src="./images/best/item_01.jpg" alt=""></a>
+                            <!-- 내용 -->
+                            <div class="contents">
+                                <a href="#" class="brand">리파인드902</a>
+                                <a href="#" class="info">
+                                    <h2>[29CM 단독]_Hairy Wool Duffle Half coat_Dark Navy</h2>
+                                    <div class="price_wrap">
+                                        <p class="discount_origin"></p>
+                                        <p class="price"><em class="discount_per">20%</em>351,200</p>
+                                    </div>
+                                </a>
+                                <div class="like_review">
+                                    <a href="#" class="like"><i class="fa-regular fa-heart"></i><span>4,676</span></a>
+                                    <a href="#" class="review"><i class="fa-regular fa-message"></i><span>6</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 개별 상품 -->
+                        <div class="item">
+                            <!-- 사진 -->
+                            <a href="#"><span class="rank">1</span><img src="./images/best/item_01.jpg" alt=""></a>
+                            <!-- 내용 -->
+                            <div class="contents">
+                                <a href="#" class="brand">리파인드902</a>
+                                <a href="#" class="info">
+                                    <h2>[29CM 단독]_Hairy Wool Duffle Half coat_Dark Navy</h2>
+                                    <div class="price_wrap">
+                                        <p class="discount_origin"></p>
+                                        <p class="price"><em class="discount_per">20%</em>351,200</p>
+                                    </div>
+                                </a>
+                                <div class="like_review">
+                                    <a href="#" class="like"><i class="fa-regular fa-heart"></i><span>4,676</span></a>
+                                    <a href="#" class="review"><i class="fa-regular fa-message"></i><span>6</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 개별 상품 -->
+                        <div class="item">
+                            <!-- 사진 -->
+                            <a href="#"><span class="rank">1</span><img src="./images/best/item_01.jpg" alt=""></a>
+                            <!-- 내용 -->
+                            <div class="contents">
+                                <a href="#" class="brand">리파인드902</a>
+                                <a href="#" class="info">
+                                    <h2>[29CM 단독]_Hairy Wool Duffle Half coat_Dark Navy</h2>
+                                    <div class="price_wrap">
+                                        <p class="discount_origin"></p>
+                                        <p class="price"><em class="discount_per">20%</em>351,200</p>
+                                    </div>
+                                </a>
+                                <div class="like_review">
+                                    <a href="#" class="like"><i class="fa-regular fa-heart"></i><span>4,676</span></a>
+                                    <a href="#" class="review"><i class="fa-regular fa-message"></i><span>6</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 개별 상품 -->
+                        <div class="item">
+                            <!-- 사진 -->
+                            <a href="#"><span class="rank">1</span><img src="./images/best/item_01.jpg" alt=""></a>
+                            <!-- 내용 -->
+                            <div class="contents">
+                                <a href="#" class="brand">리파인드902</a>
+                                <a href="#" class="info">
+                                    <h2>[29CM 단독]_Hairy Wool Duffle Half coat_Dark Navy</h2>
+                                    <div class="price_wrap">
+                                        <p class="discount_origin"></p>
+                                        <p class="price"><em class="discount_per">20%</em>351,200</p>
+                                    </div>
+                                </a>
+                                <div class="like_review">
+                                    <a href="#" class="like"><i class="fa-regular fa-heart"></i><span>4,676</span></a>
+                                    <a href="#" class="review"><i class="fa-regular fa-message"></i><span>6</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 개별 상품 -->
+                        <div class="item">
+                            <!-- 사진 -->
+                            <a href="#"><span class="rank">1</span><img src="./images/best/item_01.jpg" alt=""></a>
+                            <!-- 내용 -->
+                            <div class="contents">
+                                <a href="#" class="brand">리파인드902</a>
+                                <a href="#" class="info">
+                                    <h2>[29CM 단독]_Hairy Wool Duffle Half coat_Dark Navy</h2>
+                                    <div class="price_wrap">
+                                        <p class="discount_origin"></p>
+                                        <p class="price"><em class="discount_per">20%</em>351,200</p>
+                                    </div>
+                                </a>
+                                <div class="like_review">
+                                    <a href="#" class="like"><i class="fa-regular fa-heart"></i><span>4,676</span></a>
+                                    <a href="#" class="review"><i class="fa-regular fa-message"></i><span>6</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 개별 상품 -->
+                        <div class="item">
+                            <!-- 사진 -->
+                            <a href="#"><span class="rank">1</span><img src="./images/best/item_01.jpg" alt=""></a>
+                            <!-- 내용 -->
+                            <div class="contents">
+                                <a href="#" class="brand">리파인드902</a>
+                                <a href="#" class="info">
+                                    <h2>[29CM 단독]_Hairy Wool Duffle Half coat_Dark Navy</h2>
+                                    <div class="price_wrap">
+                                        <p class="discount_origin"></p>
+                                        <p class="price"><em class="discount_per">20%</em>351,200</p>
+                                    </div>
+                                </a>
+                                <div class="like_review">
+                                    <a href="#" class="like"><i class="fa-regular fa-heart"></i><span>4,676</span></a>
+                                    <a href="#" class="review"><i class="fa-regular fa-message"></i><span>6</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!-- 푸터 -->
+        <footer>
+            <!-- 푸터 1행 -->
+            <div class="voc">
+                <!-- 고객센터 정보 -->
+                <div class="voc_left">
+                    <p id="tel">고객센터 1644-0560</p>
+                    <p>운영시간 : 평일 09:00 - 17:00 (점심시간: 12:00-13:00 제외)</p>
+                    <div class="voc_btn"><!-- fafont -->
+                        <a href="#"><span>FNQ</span><img src="" alt=""></a>
+                        <a href="#"><span>1:1문의</span><img src="" alt=""></a>
+                    </div>
+                </div>
+                <!-- 바로가기 -->
+                <div class="voc_right">
+                    <a href="#"><img src="./images/main/media_icon_instagram.png" alt="인스타그램"></a>
+                    <a href="#"><img src="./images/main/media_icon_youtube.png" alt="유튜브"></a>
+                    <a href="#"><img src="./images/main/media_icon_appstore.png" alt="애플스토어 앱 다운로드"></a>
+                    <a href="#"><img src="./images/main/media_icon_googleplay.png" alt="구글플레이 앱 다운로드"></a>
+                </div>
+            </div>
+            <!-- 푸터 2행 -->
+            <div class="fnb">
+                <dl>
+                    <dt class="fnb_title">NOTICE</dt>
+                    <dd class="fnb_contents">
+                        <a href="#">[공지] 247 서울(247SEOUL)브랜드 상품 전수 조사 결과 및 추가 환불 상품 안내</a>
+                        <a href="#">[공지] 29CM 개인정보 처리방침 개정 사전 안내</a>
+                        <a href="#">[공지] 할렌(HALDEN) 브랜드 캐시미어 머플러 상품 판매 중단 및 환불 안내</a>
+                        <a href="#">[공지] 247 서울(247 SEOUL) 브랜드 캐시미어 머플러 상품 판매 중단 및 환불 안내</a>
+                        <a href="#">[공지] "카카오톡으로 선물"기능 장애 안내</a>
+                    </dd>
+                </dl>
+                <div class="right">
+                    <dl>
+                        <dt class="fnb_title">ABOUT US</dt>
+                        <dd class="fnb_contents">
+                            <a href="#">29CM 소개</a>
+                            <a href="#">인재채용</a>
+                            <a href="#">상시 할인 혜택</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="fnb_title">MY ORDER</dt>
+                        <dd class="fnb_contents">
+                            <a href="#">주문배송</a>
+                            <a href="#">취소/교환/반품 내역</a>
+                            <a href="#">상품리뷰 내역</a>
+                            <a href="#">증빙서류발급</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="fnb_title">MY ACCOUNT</dt>
+                        <dd class="fnb_contents">
+                            <a href="#">회원정보수정</a>
+                            <a href="#">회원등급</a>
+                            <a href="#">마일리지현황</a>
+                            <a href="#">쿠폰</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="fnb_title">HELP</dt>
+                        <dd class="fnb_contents">
+                            <a href="#">1:1 문의내역</a>
+                            <a href="#">마케팅 제휴, 입점, 대량 주문 문의</a>
+                            <a href="#">상품 Q&A 내역</a>
+                            <a href="#">공지사항</a>
+                            <a href="#">FAQ</a>
+                            <a href="#">고객의 소리</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- 푸터 3행 -->
+            <div class="law_address">
+                <div class="laws">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                </div>
+                <div class="btm">
+                    <address>
+                        상호명주식회사 무신사 (MUSINSA Co., Ltd.)사업장소재지서울특별시 성동구 아차산로 13길 11, 1층 (성수동2가, 무신사캠퍼스 엔1)팩스070-8622-7737
+                        사업자등록번호 211-88-79575 통신판매업신고2022-서울성동-01952<a href="#">사업자정보확인</a><br>
+                        전화번호 1644-0560 이메일 customer@29cm.co.kr 대표 한문일 개인정보 보호책임자 이인섭 호스팅서비스 (주)무신사<br>
+                        일부 상품의 경우 29CM는 통신판매의 당사자가 아닌 통신판매중개자로서 상품, 상품정보, 거래에 대한 책임이 제한될 수 있으므로, 각 상품 페이지에서 구체적인 내용을 확인하시기 바랍니다.
+                    </address>
+                    <p class="btm_right">KG 에스크로 가입 사실 확인</p>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

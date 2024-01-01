@@ -1,0 +1,84 @@
+/* 메인 전체 */
+main {
+    width: 100%;
+    display: flex;
+    padding: 0 50px;
+}
+/* 좌측 사이드메뉴 */
+main aside {margin-right: 80px;}
+main aside h1 {font-size: 1.438rem; margin-bottom: 30px;}
+main aside h1::after {
+    content: ''; background: #000; 
+    width: 200px; height: 4px; display: block;
+    position: relative; bottom: -10px;
+}
+main aside .snb {}
+main aside .snb a {
+    display: block;
+    color: #5D5D5D;
+    padding: 8px 0;
+}
+main aside .snb .active {color: #000; font-weight: 600;}
+/* 우측 상품목록 */
+/* 상단 필터 + 카테고리 */
+main .right {
+    width: 100%;
+}
+main .right .right_top {
+    background-color: chartreuse;
+}
+main .right .right_top h2 {font-size: 2.125rem; font-weight: 600;}
+main .right .right_top .category {width: 100%;}
+main .right .right_top .category a {
+    display: inline-block;
+    font-size: 0.875rem;
+}
+main .right .right_top .category .active {color: #000; font-weight: 600;}
+main .right .right_top .filter {}
+main .right .right_top .filter a {
+    font-size: 0.813rem; color: #5D5D5D;
+    display: inline-block;
+}
+main .right .right_top .filter .active {
+    color: #000; font-weight: 600;
+}
+/* 하단 상품목록 */
+main .right .right_btm {
+    width: 100%;
+    background-color: aqua;
+}
+/* 랭킹 탑 3 */
+main .right .right_btm .item_top3 {
+    display: flex; justify-content: space-between;
+}
+/* 개별상품 */
+main .right .right_btm .item_top3 .item {}
+/* 개별상품 - 사진 */
+main .right .right_btm .item_top3 .item .photo {
+    display: block; width: 100%;
+    position: relative;
+}
+main .right .right_btm .item_top3 .item .photo .rank {
+    position: absolute; left: -100px; 
+    width: 100%;
+    display: block; background-color: #000; 
+}
+main .right .right_btm .item_top3 .item .photo img {}
+/* 개별상품 - 내용 */
+main .right .right_btm .item_top3 .item .contents {}
+main .right .right_btm .item_top3 .item .contents .brand {}
+main .right .right_btm .item_top3 .item .contents .info {}
+main .right .right_btm .item_top3 .item .contents .info h2 {}
+main .right .right_btm .item_top3 .item .contents .info .price_wrap {}
+main .right .right_btm .item_top3 .item .contents .info .price_wrap .discount_origin {}
+main .right .right_btm .item_top3 .item .contents .info .price_wrap .price {}
+main .right .right_btm .item_top3 .item .contents .info .price_wrap .price .discount_per {}
+main .right .right_btm .item_top3 .item .contents .like_review {}
+main .right .right_btm .item_top3 .item .contents .like_review .like {}
+main .right .right_btm .item_top3 .item .contents .like_review .like .fa-heart {}
+main .right .right_btm .item_top3 .item .contents .like_review .like span {}
+main .right .right_btm .item_top3 .item .contents .like_review .review {}
+main .right .right_btm .item_top3 .item .contents .like_review .review .fa-message {}
+main .right .right_btm .item_top3 .item .contents .like_review .review span {}
+/* 랭킹 4~ */
+main .right .right_btm .item_list {}
