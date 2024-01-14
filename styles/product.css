@@ -1,0 +1,43 @@
+main {}
+/* sec1. 상품 */
+main .item_container {}
+/* sec1. 카테고리 */
+main .item_container .category {}
+main .item_container .category span {}
+main .item_container .category span span {}
+main .item_container .category span i[class$=down] {}
+main .item_container .category span .open {}
+main .item_container .category span .open a {}
+/* sec1. 상품 상단 상세 */
+main .item_container .item_detail {}
+/* sec1. 상품 상단 상세 - 브랜드 */
+main .item_container .item_detail .brand_link {}
+main .item_container .item_detail .brand_link .photo {}
+main .item_container .item_detail .brand_link .photo img {}
+main .item_container .item_detail .brand_link .contents {}
+main .item_container .item_detail .brand_link .contents h2 {}
+main .item_container .item_detail .brand_link .contents p {}
+/* sec1. 상품 상단 상세  */
+main .item_container .item_detail .item {}
+/* 좌측 사진 */
+main .item_container .item_detail .item .left_photo {}
+main .item_container .item_detail .item .left_photo .prev {}
+main .item_container .item_detail .item .left_photo .prev i[class$=left] {}
+main .item_container .item_detail .item .left_photo .photo {}
+main .item_container .item_detail .item .left_photo .photo img {}
+main .item_container .item_detail .item .left_photo .next {}
+main .item_container .item_detail .item .left_photo .next i[class$=right] {}
+/* 우측 정보 */
+main .item_container .item_detail .item .right_container {}
+main .item_container .item_detail .item .right_container #item_frm {}
+/* 상품명, 리뷰, 별점, 좋아요 */
+main .item_container .item_detail .item .right_container #item_frm .top {}
+/* 상품명, 별점 */
+main .item_container .item_detail .item .right_container #item_frm .top .title {}
+main .item_container .item_detail .item .right_container #item_frm .top .title h1 {}
+main .item_container .item_detail .item .right_container #item_frm .top .title p {}
+main .item_container .item_detail .item .right_container #item_frm .top .title p .score {}
+main .item_container .item_detail .item .right_container #item_frm .top .title p .score i[class$=star] {}
+main .item_container .item_detail .item .right_container #item_frm .top .title p a {}
+/* 좋아요 */
+main .item_container .item_detail .item .right_container #item_frm .top .title p a {}
