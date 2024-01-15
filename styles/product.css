@@ -30,14 +30,44 @@ main .item_container .item_detail .item .left_photo .next i[class$=right] {}
 /* 우측 정보 */
 main .item_container .item_detail .item .right_container {}
 main .item_container .item_detail .item .right_container #item_frm {}
+main .item_container .item_detail .item .right_container #item_frm fieldset {}
 /* 상품명, 리뷰, 별점, 좋아요 */
-main .item_container .item_detail .item .right_container #item_frm .top {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .top {}
 /* 상품명, 별점 */
-main .item_container .item_detail .item .right_container #item_frm .top .title {}
-main .item_container .item_detail .item .right_container #item_frm .top .title h1 {}
-main .item_container .item_detail .item .right_container #item_frm .top .title p {}
-main .item_container .item_detail .item .right_container #item_frm .top .title p .score {}
-main .item_container .item_detail .item .right_container #item_frm .top .title p .score i[class$=star] {}
-main .item_container .item_detail .item .right_container #item_frm .top .title p a {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .top .title {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .top .title h1 {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .top .title p {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .top .title p .score {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .top .title p .score i[class$=star] {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .top .title p a {}
 /* 좋아요 */
-main .item_container .item_detail .item .right_container #item_frm .top .title p a {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .top .like {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .top .like i[class$=heart] {}
+/* 가격 전체 묶음 */
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap {}
+/* 기존 가격, 현재 가격, 쿠폰받기 */
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .price_coupon {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .price_coupon .price {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .price_coupon .price .origin {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .price_coupon .price .result {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .price_coupon .price .result span {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .price_coupon .price .point {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .price_coupon .coupon {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .price_coupon .coupon span {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .price_coupon .coupon i[class$=down] {}
+/* 나의 구매 가능 가격 */
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .preview {}
+/* 좌측 */
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .preview .user_info {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .preview .user_info > span {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .preview .user_info > span i[class$=question] {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .preview .user_info > span > .open  {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .preview .price {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .preview .price p {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .preview .price p del {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .preview .price p span {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .preview .price p i[class$=down] {}
+/* 우측 가격 눌렀을 때 열리는 페이지 */
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list {}
