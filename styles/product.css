@@ -1,4 +1,6 @@
+/* 레이아웃 / 전체선택자 */
 main {}
+.open {}
 /* sec1. 상품 */
 main .item_container {}
 /* sec1. 카테고리 */
@@ -68,6 +70,31 @@ main .item_container .item_detail .item .right_container #item_frm fieldset .pri
 main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .preview .price p del {}
 main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .preview .price p span {}
 main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .preview .price p i[class$=down] {}
-/* 우측 가격 눌렀을 때 열리는 페이지 */
+/* 우측 가격 눌렀을 때 열리는 쿠폰 페이지 전체선택자 */
 main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open {}
 main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list {}
+/* dt모음 */
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list dt {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list dt:nth-child(1) {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list dt:nth-child(2) {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list dt:nth-child(3) {}
+/* dd 모음 */
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list dd {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list .cart {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list .card {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list .mileage {}
+/* 쿠폰 상세 */
+/* 쿠폰 상세 - 장바구니 */
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list .cart .detail {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list .cart .detail label {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list .cart .detail label .cart_check {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list .cart .detail label .name {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list .cart .detail span {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list .cart .detail span a {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list .cart .detail span a span {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list .cart .detail span a i[class$=down] {}
+/* 쿠폰 상세 - 결제 카드 */
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list .card .detail {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list .card .detail label {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list .card .detail label .card_chk {}
+main .item_container .item_detail .item .right_container #item_frm fieldset .price_wrap .user_discount .open .coupon_list .card .detail label .name {}
