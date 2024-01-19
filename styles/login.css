@@ -1,7 +1,7 @@
 main {}
 /* 로그인 전체 묶음 */
 main .login_wrap {
-    background-color: aqua; width: 50%; margin: 0 auto;
+    width: 400px; margin: 0 auto;
 }
 main .login_wrap #login_frm {}
 main .login_wrap #login_frm fieldset {}
@@ -13,43 +13,80 @@ main .login_wrap #login_frm fieldset h1 {
 }
 /* 아이디, 비번 입력창 / 로그인버튼 */
 main .login_wrap #login_frm fieldset .login_container {
-    
+    margin-bottom: 30px;
 }
-main .login_wrap #login_frm fieldset .login_container .login_input {border: 1px solid #d4d4d4; margin-bottom: 20px;}
+main .login_wrap #login_frm fieldset .login_container .login_input {margin: 20px 0;}
 /* 입력창 전체 */
-main .login_wrap #login_frm fieldset .login_container .login_input input {display: block}
+main .login_wrap #login_frm fieldset .login_container .login_input input {display: block; padding: 15px 10px; width: 100%;}
 main .login_wrap #login_frm fieldset .login_container .login_input input::placeholder {font-size: 0.875rem;}
 /* 입력창 개별 */
-main .login_wrap #login_frm fieldset .login_container .login_input #user_id {margin-bottom: 10px;}
-main .login_wrap #login_frm fieldset .login_container .login_input #user_pw {}
+main .login_wrap #login_frm fieldset .login_container .login_input #user_id {
+    margin-bottom: 10px; border: 1px solid #d4d4d4;
+}
+main .login_wrap #login_frm fieldset .login_container .login_input #user_pw {border: 1px solid #d4d4d4;}
 main .login_wrap #login_frm fieldset .login_container .login_btn_wrap {}
 main .login_wrap #login_frm fieldset .login_container .login_btn_wrap #login_btn {
     color: #fff; background-color: #000;
-    width: 100%; font-weight: 600; padding: 15px;
+    width: 100%; font-weight: 600; padding: 20px;
 }
 /* SNS 계정 로그인 -- 전체*/
-main .login_wrap #login_frm fieldset .sns_login_wrap {}
+main .login_wrap #login_frm fieldset .sns_login_wrap {text-align: center; background-color: yellow; margin-bottom: 20px;}
 main .login_wrap #login_frm fieldset .sns_login_wrap h2 {}
-main .login_wrap #login_frm fieldset .sns_login_wrap .sns_login {}
-main .login_wrap #login_frm fieldset .sns_login_wrap .sns_login a {}
+main .login_wrap #login_frm fieldset .sns_login_wrap .sns_login {
+    display: flex; justify-content: center;
+}
+main .login_wrap #login_frm fieldset .sns_login_wrap .sns_login a {
+    display: block;
+    background: url(../images/login/myedit_sns_icon_mo.png); background-size: 191px 93px;
+    background-position-y: 44px; width: 44px; height: 44px; border-radius: 50%;
+    margin-right: 15px;
+}
 /* SNS 계정 로그인 -- SNS 개별*/
-main .login_wrap #login_frm fieldset .sns_login_wrap .sns_login a[title*=kakao] {}
+main .login_wrap #login_frm fieldset .sns_login_wrap .sns_login a[title*=kakao] {
+    border: 0; display: flex; justify-content: space-between; background: none;
+    width: 120px; align-items: center;
+}
+main .login_wrap #login_frm fieldset .sns_login_wrap .sns_login a[title*=kakao] span {
+    display: inline-block; background-color: #000; 
+    background: url(../images/login/myedit_sns_icon_mo.png); background-size: 191px 93px;
+    background-position-y: 44px; width: 44px; height: 44px;
+    background-position-x: -44px; border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+}
+main .login_wrap #login_frm fieldset .sns_login_wrap .sns_login a[title*=kakao] em {
+    font-size: 0.813rem; background-color: #ffde00; font-weight: 600;
+    display: inline-block; width: 100px; height: 44px;
+    border-top-right-radius: 50px; border-bottom-right-radius: 50px;
+}
 main .login_wrap #login_frm fieldset .sns_login_wrap .sns_login a[title*=naver] {}
 main .login_wrap #login_frm fieldset .sns_login_wrap .sns_login a[title*=facebook] {}
 main .login_wrap #login_frm fieldset .sns_login_wrap .sns_login a[title*=apple] {}
 /* 회원가입 */
-main .login_wrap #login_frm fieldset .join_wrap {}
-main .login_wrap #login_frm fieldset .join_wrap p {font-size: 0.813rem;}
-main .login_wrap #login_frm fieldset .join_wrap p a {font-size: 0.813rem;}
+main .login_wrap #login_frm fieldset .join_wrap {text-align: center;}
+main .login_wrap #login_frm fieldset .join_wrap p {font-size: 0.813rem; margin-bottom: 10px;}
+main .login_wrap #login_frm fieldset .join_wrap p a {font-size: 0.813rem; color: #ff4800;}
 main .login_wrap #login_frm fieldset .join_wrap #join_btn {
-    font-size: 0.875rem;
+    font-size: 0.875rem; color: #1d1d1d; font-weight: 600;
+    width: 100%; padding: 20px 0; background-color: #fff;
+    display: block; border: 1px solid #5d5d5d; border-radius: 28px;
+    text-align: center; margin-bottom: 30px;
 }
 /* 아이디, 비밀번호 찾기 --- 전체 */
-main .login_wrap #login_frm fieldset .search {}
+main .login_wrap #login_frm fieldset .search {text-align: center;
+display: flex; justify-content: center;}
 main .login_wrap #login_frm fieldset .search a {
-    font-size: 0.75rem;
+    font-size: 0.75rem; color: #5d5d5d; display: inline-block; margin-right: 10px;
+    background-color: aqua;
+}
+main .login_wrap #login_frm fieldset .search a::after {
+    content: ''; display: inline-block;
+    width: 1px; height: 15px; /* background-color: #f4f4f4; */ background-color: #000;
+    margin-left: 7px;
 }
 /* 아이디, 비밀번호 찾기 --- 개별 */
 main .login_wrap #login_frm fieldset .search a:nth-child(1) {}
 main .login_wrap #login_frm fieldset .search a:nth-child(2) {}
-main .login_wrap #login_frm fieldset .search a:nth-child(3) {}
+main .login_wrap #login_frm fieldset .search a:nth-child(3) {
+    color: #a0a0a0; margin-right: 0;
+}
+main .login_wrap #login_frm fieldset .search a:nth-child(3)::after {display: none;}
