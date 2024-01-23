@@ -1,0 +1,32 @@
+/* 혜택 가이드 페이지 공통 */
+/* 헤더 */
+.header_bg {width: 100%; height: 200px; background-color: #000;}
+.header_bg header {
+    width: 1000px; margin: 0 auto; padding: 20px 22px 0 30px;
+}
+.header_bg header .top {display: flex; justify-content: space-between;}
+.header_bg header .top a {}
+.header_bg header .top a img {height: 24px;}
+.header_bg header h1{font-size: 1.688rem; color: #fff; text-align: center; margin: 40px 0 30px;}
+.header_bg header nav {display: flex;}
+.header_bg header nav h2 {}
+.header_bg header nav h2 a {
+    color: #b9b9b9; display: block; width: 200px; height: 50px; font-size: 1.063rem; text-align: center; padding-top: 16px;
+}
+.header_bg header nav h2 .active {
+    background-color: #fff; color: #000; font-size: 1.063rem;
+}
+/* 푸터 */
+.footer_bg {background-color: #000; width: 100%;}
+.footer_bg footer {width: 1000px; height: 325px; margin: 0 auto; display: flex; justify-content: space-between; padding-top: 50px;}
+.footer_bg footer .logo {width: 400px;}
+.footer_bg footer .logo .footer_logo {display: block; margin-bottom: 20px;}
+.footer_bg footer .logo .footer_logo img {width: 90px;}
+.footer_bg footer .logo a {color: #fff; display: block; margin-bottom: 10px;}
+.footer_bg footer .logo p {color: #fff;}
+/* 푸터 메뉴 */
+.footer_bg footer .fnb {display: flex;}
+.footer_bg footer .fnb .f_menu {width: 200px;}
+.footer_bg footer .fnb .f_menu dt {color: #fff; margin-bottom: 10px;}
+.footer_bg footer .fnb .f_menu dd {}
+.footer_bg footer .fnb .f_menu dd a {display: block; color: #fff; margin-bottom: 10px;}

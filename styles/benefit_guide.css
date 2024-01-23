@@ -1,0 +1,61 @@
+main {}
+/* 최상단 제목 + 쿠폰받기 + 정보 등 */
+main .join_coupon_bg {
+    background-color: #2d2d2d;
+}
+main .join_coupon_bg .join_coupon {
+    width: 850px; margin: 0 auto;
+    padding: 80px 0 60px;
+}
+/* 상단 제목 */
+main .join_coupon_bg .join_coupon .title {text-align: center; margin-bottom: 40px;}
+main .join_coupon_bg .join_coupon .title h1 {
+    font-size: 2.813rem; color: #fff; margin-bottom: 17px; line-height: 57px;
+}
+main .join_coupon_bg .join_coupon .title p {
+    color: #fff; font-size: 0.938rem; line-height: 24px;
+}
+/* 쿠폰받기 */
+main .join_coupon_bg .join_coupon .coupon_wrap { width: 100%; margin: 0 auto; display: flex; justify-content: center; margin-bottom: 35px;}
+main .join_coupon_bg .join_coupon .coupon_wrap .coupon {margin-left: 15px;}
+main .join_coupon_bg .join_coupon .coupon_wrap .coupon img {
+    width: 340px;
+}
+main .join_coupon_bg .join_coupon .info {
+    width: 680px; margin: 0 auto; padding-top: 15px; border-top: 1px solid #fff; margin-bottom: 30px;
+}
+main .join_coupon_bg .join_coupon .info dl {
+    display: flex; flex-flow: row wrap; margin-bottom: 10px;
+}
+main .join_coupon_bg .join_coupon .info dl dt {color: #fff; width: 20%; font-size: 0.813rem; line-height: 24px;}
+main .join_coupon_bg .join_coupon .info dl dd {color: #fff; width: 80%; font-size: 0.813rem; line-height: 24px;}
+main .join_coupon_bg .join_coupon .info .notice {font-size: 0.75rem; color: #fff;}
+/* 가입하고 쿠폰 받기 버튼 */
+main .join_coupon_bg .join_coupon .btn_wrap {width: 100%;}
+main .join_coupon_bg .join_coupon .btn_wrap #join_btn {width: 345px; height: 62px; margin: 0 auto; display: block; background-color: #000; color: #fff; font-size: 1.25rem;}
+/* 혜택 안내 */
+main .benefit_container {width: 1000px;}
+/* 회원 혜택 안내 */
+main .benefit_container .member {width: 850px; margin: 0 auto; display: flex; flex-flow: row wrap; justify-content: space-between;}
+main .benefit_container .member dt {
+    width: 30%; background-color: aquamarine;
+}
+main .benefit_container .member dd {
+    width: 65%; background-color: beige;
+    display: flex;
+}
+main .benefit_container .member dd .detail {}
+main .benefit_container .member dd .detail .member_bg {}
+main .benefit_container .member dd .detail .member_bg:nth-child(1) {}
+main .benefit_container .member dd .detail .member_bg:nth-child(2) {}
+main .benefit_container .member dd .detail .member_bg:nth-child(3) {}
+main .benefit_container .member dd .detail .member_bg:nth-child(4) {}
+main .benefit_container .member dd .detail .member_bg p {}
+main .benefit_container .member dd .detail .member_bg .sp {}
+main .benefit_container .member dd .detail .member_bg .sp:nth-child(1) {}
+main .benefit_container .member dd .detail .member_bg .sp:nth-child(2) {}
+main .benefit_container .member dd .detail ul {}
+main .benefit_container .member dd .detail ul li {}
+main .benefit_container .member dd .detail a {}
+main .benefit_container .member dd .detail a span {}
+main .benefit_container .member dd .detail a i[class$=right] {}
