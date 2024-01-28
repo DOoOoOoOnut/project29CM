@@ -1,0 +1,21 @@
+main {background-color: #f9f9f9; padding: 60px 0 200px;}
+main .plan {width: 1000px; margin: 0 auto 70px;}
+main .plan h1 {font-size: 1.625rem; margin-bottom: 20px;}
+main .plan table {width: 100%;}
+main .plan table thead {}
+main .plan table thead tr{}
+main .plan table thead tr th{
+    padding: 20px; font-size: 0.875rem; color: #444;background: #e0e0e0;}
+main .plan table tbody {}
+main .plan table tbody tr {}
+main .plan table tbody tr td {font-size: 0.875rem;}
+/* 개별선택자 */
+main .card_free {}
+main .part_free {}
+/* 유의사항 */
+main .notice {
+    width: 1000px; margin: 0 auto; padding: 40px 30px;
+    background: #fff;
+}
+main .notice h1 {color: #5b5b5b; margin-bottom: 30px;}
+main .notice p {font-size: 0.875rem; color: #303033; margin-bottom: 5px; line-height: 25px;}

@@ -19,7 +19,7 @@
                 <!-- 여성의류 -->
                 <span>
                     <span>여성의류</span>
-                    <i class="fa-regular fa-circle-down"></i>
+                    <i class="fa-solid fa-angle-down"></i>
                     <span class="open">
                         <!-- 17개 -->
                         <a href="#">여성의류</a>
@@ -44,7 +44,7 @@
                 <!-- EX~~ -->
                 <span>
                     <span>EXCLUSIVE</span>
-                    <i class="fa-regular fa-circle-down"></i>
+                    <i class="fa-solid fa-angle-down"></i>
                     <span class="open">
                         <!-- 13개 -->
                         <a href="#">EXCLUSIVE</a>
@@ -65,7 +65,7 @@
                 <!--  -->
                 <span>
                     <span>아우터</span>
-                    <i class="fa-regular fa-circle-down"></i>
+                    <i class="fa-solid fa-angle-down"></i>
                     <span class="open">
                         <a href="#">상의</a>
                         <a href="#">하의</a>
@@ -81,20 +81,27 @@
                     <div class="contents">
                         <h2>리파인드902</h2>
                         <p>모던클래식의 정제된 감성에 각 시즌의 트렌디한 디테일을 표현한 브랜드</p>
-                        <p>BRAND HOME</p>
+                        <p class="home">BRAND HOME</p>
                     </div>
                 </a>
                 <!-- 상품 제목-->
                 <div class="item">
                     <!-- 좌측 사진 -->
                     <div class="left_photo">
-                        <button type="button" class="prev"><i class="fa-solid fa-chevron-left"></i></button>
                         <span class="photo">
                             <img src="./images/product/item_main1.jpg" alt="">
                             <img src="./images/product/item_main2.jpg" alt="">
                             <img src="./images/product/item_main3.jpg" alt="">
+                            <div class="btn_wrap">
+                                <button type="button" class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                                <button type="button" class="next"><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
                         </span>
-                        <button type="button" class="next"><i class="fa-solid fa-chevron-right"></i></button>
+                        <div class="pagenation">
+                            <button type="button" class="active"></button>
+                            <button type="button"></button>
+                            <button type="button"></button>
+                        </div>
                     </div>
                     <!-- 우측 정보 -->
                     <div class="right_container">
@@ -102,24 +109,23 @@
                             <!-- 상품명, 리뷰, 별점, 좋아요 -->
                             <fieldset>
                                 <div class="top">
-                                    <!-- 상품명, 별점 -->
-                                    <div class="title">
-                                        <h1>[29CM 단독]_Hairy Wool Duffle Half coat_Dark Navy</h1>
-                                        <p>
-                                            <span class="score">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </span>
-                                            <a href="#">7개 리뷰 보기</a>
-                                        </p>
-                                    </div>
+                                    <!-- 상품명 -->
+                                    <h1>[29CM 단독]_Hairy Wool Duffle Half coat_Dark Navy</h1>
                                     <!-- 좋아요 -->
                                     <div class="like">
                                         <i class="fa-regular fa-heart"></i>
                                     </div>
+                                </div>
+                                <!-- 별점, 리뷰 -->
+                                <div class="score_review">
+                                    <span class="score">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <a href="#" class="review">7개 리뷰 보기</a>
                                 </div>
                                 <!-- 가격 전체 묶음 -->
                                 <div class="price_wrap">
@@ -127,7 +133,7 @@
                                     <div class="price_coupon">
                                         <div class="price">
                                             <p class="origin"><del>439,000</del></p>
-                                            <div class="result">
+                                            <div class="current">
                                                 <em>20%</em><span>351,200원</span>
                                             </div>
                                             <p class="point">3,512p (1%) 적립</p>
@@ -153,7 +159,7 @@
                                             </div>
                                             <!-- 우측 가격 -->
                                             <div class="price">
-                                                <p><del>28%</del><span>316,200원</span><i class="fa-solid fa-chevron-down"></i></p>
+                                                <p><em>28%</em><span>316,200원</span><i class="fa-solid fa-chevron-down"></i></p>
                                             </div>
                                         </div>
                                         <!-- 우측 가격 눌렀을 때 열리는 페이지 -->
@@ -233,7 +239,7 @@
                                                 <dt>보유 마일리지</dt>
                                                 <dd class="mileage">
                                                     <span class="detail">
-                                                        <label><input type="checkbox"><span class="name">보유 마일리지 모두 사용</span></label>
+                                                        <label><input type="checkbox" class="use_chk"><span class="name">보유 마일리지 모두 사용</span></label>
                                                         <span><span class="point">0p</span></span>
                                                     </span>
                                                 </dd>
@@ -243,83 +249,87 @@
                                 </div>
                                 <dl class="delivery_shipping">
                                     <dt>무이자 할부</dt>
-                                    <dd>
-                                        <div>최대 <em>7개월 무이자</em> 할부 시 <em>월 53,307원</em> 결제</div>
-                                        <div>
+                                    <dd class="interest_free">
+                                        <div class="month_sum">최대 <em>7개월 무이자</em> 할부 시 <em>월 53,307원</em> 결제</div>
+                                        <div class="card_info">
                                             <a href="#"><span>카드사별 할부 혜택 안내</span><i class="fa-solid fa-chevron-right"></i></a>
                                             <div class="open_bg">
                                                 <div class="open">
                                                     <div class="top">
-                                                        <h2>무이자 할부 혜택</h2>
-                                                        <p>2024. 01. 01 ~ 2024. 01. 31</p>
+                                                        <div class="title">
+                                                            <h2>무이자 할부 혜택</h2>
+                                                            <p>2024. 01. 01 ~ 2024. 01. 31</p>
+                                                        </div>
+                                                        <dl class="contents">
+                                                            <dt><img src="#" alt="현대카드"></dt>
+                                                            <dd>5만원 이상 2~3개월 무이자 할부<br> 
+                                                                50만원 이상 12개월 무이자 할부</dd>
+                                                            <dt><img src="#" alt="KB국민카드"></dt>
+                                                            <dd>5만원 이상 2~3개월 무이자 할부<br> 
+                                                                50만원 이상 12개월 무이자 할부</dd>
+                                                            <dt><img src="#" alt="신한카드"></dt>
+                                                            <dd>5만원 이상 2~3개월 무이자 할부</dd>
+                                                            <dt><img src="#" alt="하나카드"></dt>
+                                                            <dd>5만원 이상 2~3개월 무이자 할부<br> 
+                                                                50만원 이상 12개월 무이자 할부</dd>
+                                                            <dt><img src="#" alt="롯데카드"></dt>
+                                                            <dd>5만원 이상 2~3개월 무이자 할부</dd>
+                                                            <dt><img src="#" alt="삼성카드"></dt>
+                                                            <dd>5만원 이상 2~3개월 무이자 할부<br> 
+                                                                50만원 이상 12개월 무이자 할부</dd>
+                                                            <dt><img src="#" alt="BC카드"></dt>
+                                                            <dd>5만원 이상 2~3개월 무이자 할부<br> 
+                                                                50만원 이상 12개월 무이자 할부</dd>
+                                                            <dt><img src="#" alt="우리카드"></dt>
+                                                            <dd>5만원 이상 2~3개월 무이자 할부</dd>
+                                                            <dt><img src="#" alt="NH농협카드"></dt>
+                                                            <dd>5만원 이상 2~3개월 무이자 할부<br> 
+                                                                50만원 이상 12개월 무이자 할부</dd>
+                                                            <dt><img src="#" alt="전북은행"></dt>
+                                                            <dd>5만원 이상 2~3개월 무이자 할부</dd>
+                                                            <dt><img src="#" alt="광주은행"></dt>
+                                                            <dd>5만원 이상 2~3개월 무이자 할부<br> 
+                                                                50만원 이상 12개월 무이자 할부</dd>
+                                                        </dl>
                                                     </div>
-                                                    <dl>
-                                                        <dt><img src="#" alt="현대카드"></dt>
-                                                        <dd>5만원 이상 2~3개월 무이자 할부<br> 
-                                                            50만원 이상 12개월 무이자 할부</dd>
-                                                        <dt><img src="#" alt="KB국민카드"></dt>
-                                                        <dd>5만원 이상 2~3개월 무이자 할부<br> 
-                                                            50만원 이상 12개월 무이자 할부</dd>
-                                                        <dt><img src="#" alt="신한카드"></dt>
-                                                        <dd>5만원 이상 2~3개월 무이자 할부</dd>
-                                                        <dt><img src="#" alt="하나카드"></dt>
-                                                        <dd>5만원 이상 2~3개월 무이자 할부<br> 
-                                                            50만원 이상 12개월 무이자 할부</dd>
-                                                        <dt><img src="#" alt="롯데카드"></dt>
-                                                        <dd>5만원 이상 2~3개월 무이자 할부</dd>
-                                                        <dt><img src="#" alt="삼성카드"></dt>
-                                                        <dd>5만원 이상 2~3개월 무이자 할부<br> 
-                                                            50만원 이상 12개월 무이자 할부</dd>
-                                                        <dt><img src="#" alt="BC카드"></dt>
-                                                        <dd>5만원 이상 2~3개월 무이자 할부<br> 
-                                                            50만원 이상 12개월 무이자 할부</dd>
-                                                        <dt><img src="#" alt="우리카드"></dt>
-                                                        <dd>5만원 이상 2~3개월 무이자 할부</dd>
-                                                        <dt><img src="#" alt="NH농협카드"></dt>
-                                                        <dd>5만원 이상 2~3개월 무이자 할부<br> 
-                                                            50만원 이상 12개월 무이자 할부</dd>
-                                                        <dt><img src="#" alt="전북은행"></dt>
-                                                        <dd>5만원 이상 2~3개월 무이자 할부</dd>
-                                                        <dt><img src="#" alt="광주은행"></dt>
-                                                        <dd>5만원 이상 2~3개월 무이자 할부<br> 
-                                                            50만원 이상 12개월 무이자 할부</dd>
-                                                    </dl>
                                                     <div class="middle">
-                                                        <h2>부분 무이자 할부 혜택</h2>
-                                                        <p>2024. 01. 01 ~ 2024. 01. 31</p>
+                                                        <div class="title">
+                                                            <h2>부분 무이자 할부 혜택</h2>
+                                                            <p>2024. 01. 01 ~ 2024. 01. 31</p>
+                                                        </div>
+                                                        <dl class="contents">
+                                                            <dt><img src="#" alt="KB국민카드"></dt>
+                                                            <dd>5개월 할부 (1~2회차 이자 고객 부담)<br>
+                                                                6개월 할부 (1~2회차 이자 고객 부담)</dd>
+                                                            <dt><img src="#" alt="신한카드"></dt>
+                                                            <dd>5개월 할부 (1~2회차 이자 고객 부담)<br>
+                                                                6개월 할부 (1~2회차 이자 고객 부담)<br>
+                                                                7개월 할부 (1~3회차 이자 고객 부담)<br>
+                                                                8개월 할부 (1~3회차 이자 고객 부담)</dd>
+                                                            <dt><img src="#" alt="하나카드"></dt>
+                                                            <dd>5개월 할부 (1~2회차 이자 고객 부담)<br>
+                                                                6개월 할부 (1~2회차 이자 고객 부담)<br>
+                                                                7개월 할부 (1~3회차 이자 고객 부담)<br>
+                                                                8개월 할부 (1~3회차 이자 고객 부담)<br>
+                                                                9개월 할부 (1~3회차 이자 고객 부담)<br>
+                                                                10개월 할부 (1~3회차 이자 고객 부담)</dd>
+                                                            <dt><img src="#" alt="우리카드"></dt>
+                                                            <dd>5개월 할부 (1~2회차 이자 고객 부담)<br>
+                                                                6개월 할부 (1~2회차 이자 고객 부담)<br>
+                                                                7개월 할부 (1~3회차 이자 고객 부담)<br></dd>
+                                                            <dt><img src="#" alt="NH농협카드"></dt>
+                                                            <dd>5개월 할부 (1~2회차 이자 고객 부담)<br>
+                                                                6개월 할부 (1~2회차 이자 고객 부담)<br>
+                                                                7개월 할부 (1~3회차 이자 고객 부담)<br></dd>
+                                                            <dt><img src="#" alt="전북은행"></dt>
+                                                            <dd>5개월 할부 (1~2회차 이자 고객 부담)<br>
+                                                                6개월 할부 (1~2회차 이자 고객 부담)<br>
+                                                                7개월 할부 (1~3회차 이자 고객 부담)<br></dd>
+                                                        </dl>
                                                     </div>
-                                                    <dl>
-                                                        <dt><img src="#" alt="KB국민카드"></dt>
-                                                        <dd>5개월 할부 (1~2회차 이자 고객 부담)<br>
-                                                            6개월 할부 (1~2회차 이자 고객 부담)</dd>
-                                                        <dt><img src="#" alt="신한카드"></dt>
-                                                        <dd>5개월 할부 (1~2회차 이자 고객 부담)<br>
-                                                            6개월 할부 (1~2회차 이자 고객 부담)<br>
-                                                            7개월 할부 (1~3회차 이자 고객 부담)<br>
-                                                            8개월 할부 (1~3회차 이자 고객 부담)</dd>
-                                                        <dt><img src="#" alt="하나카드"></dt>
-                                                        <dd>5개월 할부 (1~2회차 이자 고객 부담)<br>
-                                                            6개월 할부 (1~2회차 이자 고객 부담)<br>
-                                                            7개월 할부 (1~3회차 이자 고객 부담)<br>
-                                                            8개월 할부 (1~3회차 이자 고객 부담)<br>
-                                                            9개월 할부 (1~3회차 이자 고객 부담)<br>
-                                                            10개월 할부 (1~3회차 이자 고객 부담)</dd>
-                                                        <dt><img src="#" alt="우리카드"></dt>
-                                                        <dd>5개월 할부 (1~2회차 이자 고객 부담)<br>
-                                                            6개월 할부 (1~2회차 이자 고객 부담)<br>
-                                                            7개월 할부 (1~3회차 이자 고객 부담)<br></dd>
-                                                        <dt><img src="#" alt="NH농협카드"></dt>
-                                                        <dd>5개월 할부 (1~2회차 이자 고객 부담)<br>
-                                                            6개월 할부 (1~2회차 이자 고객 부담)<br>
-                                                            7개월 할부 (1~3회차 이자 고객 부담)<br></dd>
-                                                        <dt><img src="#" alt="전북은행"></dt>
-                                                        <dd>5개월 할부 (1~2회차 이자 고객 부담)<br>
-                                                            6개월 할부 (1~2회차 이자 고객 부담)<br>
-                                                            7개월 할부 (1~3회차 이자 고객 부담)<br></dd>
-                                                    </dl>
                                                     <div class="btm">
                                                         <h2>유의사항</h2>
-                                                        <ul>
+                                                        <ul class="contents">
                                                             <li>·전북/광주카드 무이자 : 당사 결제창 내 (무)표기가 노출 되지 않더라도 5만원 이상 결제 시에 업종 무이자 적용 됩니다.</li>
                                                             <li>·개인사업자/법인/체크/선불/기프트/하이브리드/토스카드/은행계열카드는 적용 대상에서 제외됩니다.
                                                                 *은행계열카드 : 카드 전/후면에 BC마크가 없는 카드 (예. 수협, 제주 등)</li>
@@ -336,9 +346,9 @@
                                         </div>
                                     </dd>
                                     <dt>배송정보</dt>
-                                    <dd>예약 출고<br><span>2024.01.24이내</span> 출고 예정</dd>
+                                    <dd class="delivery_info">예약 출고<br><span>2024.01.24</span>이내 출고 예정</dd>
                                     <dt>배송비</dt>
-                                    <dd>해당 브랜드 제품으로만 50000원 이상 구매시 무료배송 ( 미만시 배송비 3000원 발생 )<br>
+                                    <dd class="delivery_fee">해당 브랜드 제품으로만 50000원 이상 구매시 무료배송 ( 미만시 배송비 3000원 발생 )<br>
                                         제주도를 포함한 도서/산간지역은 추가배송비 3,000원
                                     </dd>
                                 </dl>
@@ -359,8 +369,10 @@
                                     </fieldset>
                                     <fieldset>
                                         <legend class="skip">장바구니 담기, 바로 구매</legend>
-                                        <button type="button" id="cart">장바구니 담기</button>
-                                        <button type="button" id="buy">바로 구매하기</button>
+                                        <span class="btn_wrap">
+                                            <button type="button" id="cart">장바구니 담기</button>
+                                            <button type="button" id="buy">바로 구매하기</button>
+                                        </span>
                                     </fieldset>
                                 </div>
                             </fieldset>
@@ -375,27 +387,28 @@
             </div>
             <!-- 상품 설명 -->
             <div class="product_detail">
+                <h2>상품 설명</h2>
                 <div class="photo_text">
                     <div class="photo">
                         <img src="./images/product/bnr_detail01.png" alt="">
-                        <img src="./images/product/bnr_detail02.png" alt="">
-                        <img src="./images/product/bnr_detail03.png" alt="">
-                        <img src="./images/product/bnr_detail04.png" alt="">
-                        <img src="./images/product/bnr_detail05.png" alt="">
-                        <img src="./images/product/bnr_detail06.png" alt="">
-                        <img src="./images/product/bnr_detail07.png" alt="">
-                        <img src="./images/product/bnr_detail08.png" alt="">
-                        <img src="./images/product/bnr_detail09.png" alt="">
-                        <img src="./images/product/bnr_detail10.png" alt="">
-                        <img src="./images/product/bnr_detail11.png" alt="">
-                        <img src="./images/product/bnr_detail12.png" alt="">
-                        <img src="./images/product/bnr_detail13.png" alt="">
-                        <img src="./images/product/bnr_detail14.png" alt="">
-                        <img src="./images/product/bnr_detail15.png" alt="">
-                        <img src="./images/product/bnr_detail16.png" alt="">
-                        <img src="./images/product/bnr_detail17.png" alt="">
-                        <img src="./images/product/bnr_detail18.png" alt="">
-                        <img src="./images/product/bnr_detail19.png" alt="">
+                        <img src="./images/product/bnr_detail02.jpg" alt="">
+                        <img src="./images/product/bnr_detail03.jpg" alt="">
+                        <img src="./images/product/bnr_detail04.jpg" alt="">
+                        <img src="./images/product/bnr_detail05.jpg" alt="">
+                        <img src="./images/product/bnr_detail06.jpg" alt="">
+                        <img src="./images/product/bnr_detail07.jpg" alt="">
+                        <img src="./images/product/bnr_detail08.jpg" alt="">
+                        <img src="./images/product/bnr_detail09.jpg" alt="">
+                        <img src="./images/product/bnr_detail10.jpg" alt="">
+                        <img src="./images/product/bnr_detail11.jpg" alt="">
+                        <img src="./images/product/bnr_detail12.jpg" alt="">
+                        <img src="./images/product/bnr_detail13.jpg" alt="">
+                        <img src="./images/product/bnr_detail14.jpg" alt="">
+                        <img src="./images/product/bnr_detail15.jpg" alt="">
+                        <img src="./images/product/bnr_detail16.jpg" alt="">
+                        <img src="./images/product/bnr_detail17.jpg" alt="">
+                        <img src="./images/product/bnr_detail18.jpg" alt="">
+                        <img src="./images/product/bnr_detail19.jpg" alt="">
                     </div>
                     <dl class="text">
                         <dt>배송일정</dt>
@@ -500,31 +513,31 @@
                         </dd>
                     </dl>
                 </div>
-                <div class="more_btn"><button type="button">상품설명 더보기<i class="fa-solid fa-chevron-down"></i></button></div>
-                <div class="close_btn"><button type="button">상품설명 닫기<i class="fa-solid fa-chevron-up"></i></button></div>
+                <div class="more"><button type="button" id="more_btn">상품설명 더보기<i class="fa-solid fa-chevron-down"></i></button></div>
+                <div class="close"><button type="button" id="close_btn">상품설명 닫기<i class="fa-solid fa-chevron-up"></i></button></div>
             </div>
             <!-- 상품정보 보기 -->
             <div class="item_info">
                 <h2>상품정보 보기</h2>
                 <dl class="info_list">
                     <dt>제품 소재</dt>
-                    <dd></dd>
+                    <dd>FABRIC1: 100% POLYAMIDE FABRIC2 : 100% POLYESTER FILLING : 90% WHITE DUCK DOWN, 10% FEATHER</dd>
                     <dt>색상</dt>
-                    <dd></dd>
+                    <dd>black</dd>
                     <dt>치수</dt>
-                    <dd></dd>
+                    <dd>FREE</dd>
                     <dt>제조자</dt>
-                    <dd></dd>
+                    <dd>LENINA</dd>
                     <dt>제조국</dt>
-                    <dd></dd>
+                    <dd>-</dd>
                     <dt>세탁방법 및 취급시 주의사항</dt>
-                    <dd></dd>
+                    <dd>케어라벨 참고</dd>
                     <dt>제조연월</dt>
-                    <dd></dd>
+                    <dd>-</dd>
                     <dt>품질보증기준</dt>
-                    <dd></dd>
+                    <dd>소비자 보호법에 따름</dd>
                     <dt>A/S 책임자와 전화번호</dt>
-                    <dd></dd>
+                    <dd>29CM 고객센터 1644-0560 (발신전용), A/S 문의접수는 MY>1:1문의 이용</dd>
                 </dl>
             </div>
             <!-- 판매자정보 -->
@@ -532,15 +545,15 @@
                 <h2>판매자정보</h2>
                 <dl class="info_list">
                     <dt>상호명</dt>
-                    <dd></dd>
+                    <dd>29CM</dd>
                     <dt>사업자등록번호</dt>
-                    <dd></dd>
+                    <dd>2118879575</dd>
                     <dt>통신판매업번호</dt>
-                    <dd></dd>
+                    <dd>2022-서울성동-01952</dd>
                     <dt>대표자</dt>
-                    <dd></dd>
+                    <dd>한문일</dd>
                     <dt>사업장 소재지</dt>
-                    <dd></dd>
+                    <dd>(04797) 서울특별시 성동구 아차산로13길 11 무신사캠퍼스 N1 1층 (성수동2가)</dd>
                 </dl>
             </div>
         </section>
@@ -551,18 +564,18 @@
                 <!-- 상단 브랜드 큰 배너 -->
                 <div class="brand_bg"> <!-- css background로 넣기 -->
                     <div class="brand">
-                        <p class="brand_name_ko">파사드패턴</p>
-                        <h2 class="brand_name_eg">FACADE PATTERN</h2>
-                        <p>매일 입어도 과함이 없고, 언제 어디서나 불편함이 없는 옷</p>
-                        <a href="#"><i class="fa-regular fa-heart"></i><span class="like_btn">103319</span></a>
-                        <a href="#"><span>Brand Home</span><i class="fa-solid fa-arrow-right-long"></i></a>
+                        <p class="name_ko">르니나</p>
+                        <h2 class="name_eng">LENINA</h2>
+                        <p class="intro">Flow & Balance in your elegance life</p>
+                        <a href="#" class="like"><i class="fa-regular fa-heart"></i><span class="like_num">103319</span></a>
+                        <a href="#" class="home"><span>Brand Home</span><i class="fa-solid fa-arrow-right-long"></i></a>
                     </div>
                 </div>
                 <!-- 하단 브랜드 상품 모음 -->
                 <div class="brand_item">
                     <div class="all_page">
                         <!-- 페이지 1 -->
-                        <div class="page">
+                        <div class="page active">
                             <!-- 상품 개별 -->
                             <a class="item">
                                 <p class="photo"><img src="./images/product/brand_item_01.jpg" alt=""></p>
@@ -663,83 +676,79 @@
                     </div>
                     <div class="page_btn">
                         <button type="button" class="prev"><i class="fa-solid fa-chevron-left"></i></button>
-                        <span><span class="current">1</span><span class="all">/4</span></span>
+                        <span class="pagenation"><span class="current">1</span><span class="all">/4</span></span>
                         <button type="button" class="next"><i class="fa-solid fa-chevron-right"></i></button>
                     </div>
                 </div>
             </div>
-            <!-- 연관상품 모음 -->
+            <!-- 브랜드 연관상품 모음 -->
             <div class="relation_wrap">
                 <div class="all_page">
                     <!-- 페이지 1 -->
-                    <div class="page">
+                    <div class="page active">
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                            </div>
+                        </a>
+                        </a>
+                        <!-- 상품 개별 -->
+                        <a class="item">
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
+                            <div class="info">
+                                <div class="title">
+                                    <h3>오르트 유리 수납장</h3>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
-                                </div>
-                            </div>
-                        </a>
-                        <!-- 상품 개별 -->
-                        <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
-                            <div class="info">
-                                <div class="title">
-                                    <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
@@ -748,71 +757,66 @@
                     <div class="page">
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
@@ -821,71 +825,66 @@
                     <div class="page">
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
@@ -894,71 +893,66 @@
                     <div class="page">
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
@@ -967,71 +961,66 @@
                     <div class="page">
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                         <!-- 상품 개별 -->
                         <a class="item">
-                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="photo"><img src="./images/product/recommend_item_01.jpg" alt=""></p>
                             <div class="info">
                                 <div class="title">
                                     <h3>오르트 유리 수납장</h3>
-                                    <p class="price">525,000원</p>
-                                </div>
-                                <div class="price">
-                                    <p><del>860,000원</del></p>
-                                    <p><em>26%</em>634,000원</p>
+                                    <p class="price">
+                                        <del>860,000원</del>
+                                        <span><em>26%</em>634,000원</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
@@ -1039,8 +1028,8 @@
                 </div>
                 <div class="page_btn">
                     <button type="button" class="prev"><!-- fa --></button>
-                    <span><span class="current">1</span><span class="all">/4</span></span>
-                    <button type="button" class="back"><!-- fa --></button>
+                    <span class="pagenation"><span class="current">1</span><span class="all">/4</span></span>
+                    <button type="button" class="next"><!-- fa --></button>
                 </div>
             </div>
         </section>
@@ -1059,8 +1048,8 @@
             <!-- 사진리뷰 -->
             <div class="photo_wrap">
                 <a href="#" class="prev"><i class="fa-solid fa-chevron-left"></i></a>
-                <!-- 페이지 1 -->
-                <div class="page">
+                <!-- 페이지-->
+                <div class="photo_page">
                     <!-- 개별 리뷰 1-->
                     <div href="#" class="photo_rev">
                         <a class="photo"><img src="./images/product/review_01.jpeg" alt=""></a>
@@ -1128,7 +1117,7 @@
                                             <dt>사이즈:</dt>
                                             <dd>잘 맞아요</dd>
                                         </dl>
-                                        <p class="btm">
+                                        <p class="comment">
                                             너무 귀여운 색감에 반해서 구매했어요~ 기장도 길어서 요즘같은 날씨에 입기 좋아요. 루즈핏이라 예쁘고 따뜻해서 좋아요.
                                         </p>
                                     </div>
@@ -1204,7 +1193,7 @@
                                             <dt>사이즈:</dt>
                                             <dd>잘 맞아요</dd>
                                         </dl>
-                                        <p class="btm">
+                                        <p class="comment">
                                             너무 귀여운 색감에 반해서 구매했어요~ 기장도 길어서 요즘같은 날씨에 입기 좋아요. 루즈핏이라 예쁘고 따뜻해서 좋아요.
                                         </p>
                                     </div>
@@ -1280,7 +1269,7 @@
                                             <dt>사이즈:</dt>
                                             <dd>잘 맞아요</dd>
                                         </dl>
-                                        <p class="btm">
+                                        <p class="comment">
                                             너무 귀여운 색감에 반해서 구매했어요~ 기장도 길어서 요즘같은 날씨에 입기 좋아요. 루즈핏이라 예쁘고 따뜻해서 좋아요.
                                         </p>
                                     </div>
@@ -1356,7 +1345,7 @@
                                             <dt>사이즈:</dt>
                                             <dd>잘 맞아요</dd>
                                         </dl>
-                                        <p class="btm">
+                                        <p class="comment">
                                             너무 귀여운 색감에 반해서 구매했어요~ 기장도 길어서 요즘같은 날씨에 입기 좋아요. 루즈핏이라 예쁘고 따뜻해서 좋아요.
                                         </p>
                                     </div>
@@ -1432,7 +1421,7 @@
                                             <dt>사이즈:</dt>
                                             <dd>잘 맞아요</dd>
                                         </dl>
-                                        <p class="btm">
+                                        <p class="comment">
                                             너무 귀여운 색감에 반해서 구매했어요~ 기장도 길어서 요즘같은 날씨에 입기 좋아요. 루즈핏이라 예쁘고 따뜻해서 좋아요.
                                         </p>
                                     </div>
@@ -1508,7 +1497,7 @@
                                             <dt>사이즈:</dt>
                                             <dd>잘 맞아요</dd>
                                         </dl>
-                                        <p class="btm">
+                                        <p class="comment">
                                             너무 귀여운 색감에 반해서 구매했어요~ 기장도 길어서 요즘같은 날씨에 입기 좋아요. 루즈핏이라 예쁘고 따뜻해서 좋아요.
                                         </p>
                                     </div>
@@ -1584,7 +1573,7 @@
                                             <dt>사이즈:</dt>
                                             <dd>잘 맞아요</dd>
                                         </dl>
-                                        <p class="btm">
+                                        <p class="comment">
                                             너무 귀여운 색감에 반해서 구매했어요~ 기장도 길어서 요즘같은 날씨에 입기 좋아요. 루즈핏이라 예쁘고 따뜻해서 좋아요.
                                         </p>
                                     </div>
@@ -1621,7 +1610,7 @@
                                         <p class="body">체형:160cm,51kg</p>
                                         <p class="size">사이즈:잘 맞아요</p>
                                     </div>
-                                    <p class="text">너무 귀여운 색감에 반해서 구매했어요~ 기장도 길어서 따뜻한 날씨에 입기 좋아요. 루즈핏이라 예쁘고 따뜻해서 좋아요.</p>
+                                    <p class="comment">너무 귀여운 색감에 반해서 구매했어요~ 기장도 길어서 따뜻한 날씨에 입기 좋아요. 루즈핏이라 예쁘고 따뜻해서 좋아요.</p>
                                 </div>
                                 <p class="right_photo"><img src="./images/product/review_08.jpeg" alt=""></p>
                             </div>
@@ -1649,7 +1638,7 @@
                                         <p class="body">체형:160cm,51kg</p>
                                         <p class="size">사이즈:잘 맞아요</p>
                                     </div>
-                                    <p class="text">너무 귀여운 색감에 반해서 구매했어요~ 기장도 길어서 따뜻한 날씨에 입기 좋아요. 루즈핏이라 예쁘고 따뜻해서 좋아요.</p>
+                                    <p class="comment">너무 귀여운 색감에 반해서 구매했어요~ 기장도 길어서 따뜻한 날씨에 입기 좋아요. 루즈핏이라 예쁘고 따뜻해서 좋아요.</p>
                                 </div>
                                 <p class="right_photo"><img src="./images/product/review_21.jpeg" alt=""></p>
                             </div>
@@ -1677,7 +1666,7 @@
                                         <p class="body">체형:160cm,51kg</p>
                                         <p class="size">사이즈:잘 맞아요</p>
                                     </div>
-                                    <p class="text">너무 귀여운 색감에 반해서 구매했어요~ 기장도 길어서 따뜻한 날씨에 입기 좋아요. 루즈핏이라 예쁘고 따뜻해서 좋아요.</p>
+                                    <p class="comment">너무 귀여운 색감에 반해서 구매했어요~ 기장도 길어서 따뜻한 날씨에 입기 좋아요. 루즈핏이라 예쁘고 따뜻해서 좋아요.</p>
                                 </div>
                                 <p class="right_photo"><img src="./images/product/review_20.jpeg" alt=""></p>
                             </div>
@@ -1705,15 +1694,15 @@
                                         <p class="body">체형:160cm,51kg</p>
                                         <p class="size">사이즈:잘 맞아요</p>
                                     </div>
-                                    <p class="text">너무 귀여운 색감에 반해서 구매했어요~ 기장도 길어서 따뜻한 날씨에 입기 좋아요. 루즈핏이라 예쁘고 따뜻해서 좋아요.</p>
+                                    <p class="comment">너무 귀여운 색감에 반해서 구매했어요~ 기장도 길어서 따뜻한 날씨에 입기 좋아요. 루즈핏이라 예쁘고 따뜻해서 좋아요.</p>
                                 </div>
                                 <p class="right_photo"><img src="./images/product/review_27.jpg" alt=""></p>
                             </div>
                         </a>
                     </li>
                 </ul>
-                <!-- 페이지 표시줄/ 버튼 위치 확인하고 넣기 -->
-                <div class="page_num"><!-- 중간부분 ...처리, 1페이지일 때 prev 버튼 숨김 -->
+                <!-- 페이지네이션/ 버튼 위치 확인하고 넣기 -->
+                <div class="pagenation"><!-- 중간부분 ...처리, 1페이지일 때 prev 버튼 숨김 -->
                     <button type="button" class="prev"><i class="fa-solid fa-chevron-left"></i></button>
                     <span class="num">
                         <a href="#">1</a>
@@ -1744,14 +1733,14 @@
                     <a href="#">배송문의<span class="num">(148)</span></a>
                     <a href="#">기타<span class="num">(63)</span></a>
                 </div>
-                <a href="#">Q&A쓰기</a>
+                <a href="#" class="write">Q&A쓰기</a>
             </div>
             <div class="page_wrap">
                 <ul class="page"><!-- grid -->
                     <li>
                         <a href="#" class="category">[배송문의]</a>
-                        <a href="#"><i class="fa-solid fa-lock"></i><span>비밀글입니다.</span></a>
-                        <a href="#">
+                        <a href="#" class="comment"><i class="fa-solid fa-lock"></i><span>비밀글입니다.</span></a>
+                        <a href="#" class="state">
                             <span class="name">ekdm****</span>
                             <span class="date">2024.01.13</span>
                             <span class="reply">yes</span>
@@ -1759,8 +1748,8 @@
                     </li>
                     <li>
                         <a href="#" class="category">[배송문의]</a>
-                        <a href="#"><i class="fa-solid fa-lock"></i><span>비밀글입니다.</span></a>
-                        <a href="#">
+                        <a href="#" class="comment"><i class="fa-solid fa-lock"></i><span>비밀글입니다.</span></a>
+                        <a href="#" class="state">
                             <span class="name">ekdm****</span>
                             <span class="date">2024.01.13</span>
                             <span class="reply">yes</span>
@@ -1768,8 +1757,8 @@
                     </li>
                     <li>
                         <a href="#" class="category">[배송문의]</a>
-                        <a href="#"><i class="fa-solid fa-lock"></i><span>비밀글입니다.</span></a>
-                        <a href="#">
+                        <a href="#" class="comment"><i class="fa-solid fa-lock"></i><span>비밀글입니다.</span></a>
+                        <a href="#" class="state">
                             <span class="name">ekdm****</span>
                             <span class="date">2024.01.13</span>
                             <span class="reply">yes</span>
@@ -1777,8 +1766,8 @@
                     </li>
                     <li>
                         <a href="#" class="category">[배송문의]</a>
-                        <a href="#"><i class="fa-solid fa-lock"></i><span>비밀글입니다.</span></a>
-                        <a href="#">
+                        <a href="#" class="comment"><i class="fa-solid fa-lock"></i><span>비밀글입니다.</span></a>
+                        <a href="#" class="state">
                             <span class="name">ekdm****</span>
                             <span class="date">2024.01.13</span>
                             <span class="reply">yes</span>
@@ -1786,8 +1775,8 @@
                     </li>
                     <li>
                         <a href="#" class="category">[배송문의]</a>
-                        <a href="#"><i class="fa-solid fa-lock"></i><span>비밀글입니다.</span></a>
-                        <a href="#">
+                        <a href="#" class="comment"><i class="fa-solid fa-lock"></i><span>비밀글입니다.</span></a>
+                        <a href="#" class="state">
                             <span class="name">ekdm****</span>
                             <span class="date">2024.01.13</span>
                             <span class="reply">yes</span>
@@ -1795,8 +1784,8 @@
                     </li>
                     <li>
                         <a href="#" class="category">[배송문의]</a>
-                        <a href="#"><i class="fa-solid fa-lock"></i><span>비밀글입니다.</span></a>
-                        <a href="#">
+                        <a href="#" class="comment"><i class="fa-solid fa-lock"></i><span>비밀글입니다.</span></a>
+                        <a href="#" class="state">
                             <span class="name">ekdm****</span>
                             <span class="date">2024.01.13</span>
                             <span class="reply">yes</span>
@@ -1804,8 +1793,8 @@
                     </li>
                     <li>
                         <a href="#" class="category">[배송문의]</a>
-                        <a href="#"><i class="fa-solid fa-lock"></i><span>비밀글입니다.</span></a>
-                        <a href="#">
+                        <a href="#" class="comment"><i class="fa-solid fa-lock"></i><span>비밀글입니다.</span></a>
+                        <a href="#" class="state">
                             <span class="name">ekdm****</span>
                             <span class="date">2024.01.13</span>
                             <span class="reply">yes</span>
@@ -1824,7 +1813,7 @@
             <p>·가구 및 일부 상품, 제주도를 포함한 도서산간 지역은 추가배송비 입금요청이 있을 수 있습니다.</p>
         </section>
         <!-- 교환,환불,A/S안내 -->
-        <section class="change_refund_A/S">
+        <section class="change_refund_AS">
             <h2>교환,환불,A/S안내</h2>
             <p>·상품 수령일로부터 7일 이내 반품 / 환불 가능합니다.</p>
             <p>·변심 반품의 경우 왕복배송비를 차감한 금액이 환불되며, 제품 및 포장 상태가 재판매 가능하여야 합니다.</p>
@@ -1843,9 +1832,9 @@
             <!-- 기간별 필터 -->
             <div class="filter">
                 <a href="#" class="active">실시간</a>
-                <a href="#" class="active">일간</a>
-                <a href="#" class="active">주간</a>
-                <a href="#" class="active">월간</a>
+                <a href="#">일간</a>
+                <a href="#">주간</a>
+                <a href="#">월간</a>
             </div>
             <!-- 페이지 묶음 -->
             <div class="page_wrap">
@@ -1862,10 +1851,10 @@
                             <a href="#">
                                 <h3>Heidi Alpaca Nordic Cardigan (Ivory)</h3>
                                 <p class="price">
-                                    <del class="origin">229,000원</del><br>
-                                    <span class="discount_per">15%</span><span>194,650원</span>
+                                    <del class="origin">229,000원</del>
+                                    <span><em class="discount_per">15%</em>194,650원</span>
                                 </p>
-                                <p>무료배송</p>
+                                <p class="delivery_free">무료배송</p>
                             </a>
                         </div>
                     </div>
@@ -1880,10 +1869,10 @@
                             <a href="#">
                                 <h3>Heidi Alpaca Nordic Cardigan (Ivory)</h3>
                                 <p class="price">
-                                    <del class="origin">229,000원</del><br>
-                                    <span class="discount_per">15%</span><span>194,650원</span>
+                                    <del class="origin">229,000원</del>
+                                    <span><em class="discount_per">15%</em>194,650원</span>
                                 </p>
-                                <p>무료배송</p>
+                                <p class="delivery_free">무료배송</p>
                             </a>
                         </div>
                     </div>
@@ -1898,10 +1887,10 @@
                             <a href="#">
                                 <h3>Heidi Alpaca Nordic Cardigan (Ivory)</h3>
                                 <p class="price">
-                                    <del class="origin">229,000원</del><br>
-                                    <span class="discount_per">15%</span><span>194,650원</span>
+                                    <del class="origin">229,000원</del>
+                                    <span><em class="discount_per">15%</em>194,650원</span>
                                 </p>
-                                <p>무료배송</p>
+                                <p class="delivery_free">무료배송</p>
                             </a>
                         </div>
                     </div>
@@ -1916,10 +1905,10 @@
                             <a href="#">
                                 <h3>Heidi Alpaca Nordic Cardigan (Ivory)</h3>
                                 <p class="price">
-                                    <del class="origin">229,000원</del><br>
-                                    <span class="discount_per">15%</span><span>194,650원</span>
+                                    <del class="origin">229,000원</del>
+                                    <span><em class="discount_per">15%</em>194,650원</span>
                                 </p>
-                                <p>무료배송</p>
+                                <p class="delivery_free">무료배송</p>
                             </a>
                         </div>
                     </div>
@@ -1934,10 +1923,10 @@
                             <a href="#">
                                 <h3>Heidi Alpaca Nordic Cardigan (Ivory)</h3>
                                 <p class="price">
-                                    <del class="origin">229,000원</del><br>
-                                    <span class="discount_per">15%</span><span>194,650원</span>
+                                    <del class="origin">229,000원</del>
+                                    <span><em class="discount_per">15%</em>194,650원</span>
                                 </p>
-                                <p>무료배송</p>
+                                <p class="delivery_free">무료배송</p>
                             </a>
                         </div>
                     </div>
@@ -1967,10 +1956,10 @@
                             <a href="#">
                                 <h3>Heidi Alpaca Nordic Cardigan (Ivory)</h3>
                                 <p class="price">
-                                    <del class="origin">229,000원</del><br>
-                                    <span class="discount_per">15%</span><span>194,650원</span>
+                                    <del class="origin">229,000원</del>
+                                    <span><em class="discount_per">15%</em>194,650원</span>
                                 </p>
-                                <p>무료배송</p>
+                                <p class="delivery_free">무료배송</p>
                             </a>
                         </div>
                     </div>
@@ -1985,10 +1974,10 @@
                             <a href="#">
                                 <h3>Heidi Alpaca Nordic Cardigan (Ivory)</h3>
                                 <p class="price">
-                                    <del class="origin">229,000원</del><br>
-                                    <span class="discount_per">15%</span><span>194,650원</span>
+                                    <del class="origin">229,000원</del>
+                                    <span><em class="discount_per">15%</em>194,650원</span>
                                 </p>
-                                <p>무료배송</p>
+                                <p class="delivery_free">무료배송</p>
                             </a>
                         </div>
                     </div>
@@ -2003,10 +1992,10 @@
                             <a href="#">
                                 <h3>Heidi Alpaca Nordic Cardigan (Ivory)</h3>
                                 <p class="price">
-                                    <del class="origin">229,000원</del><br>
-                                    <span class="discount_per">15%</span><span>194,650원</span>
+                                    <del class="origin">229,000원</del>
+                                    <span><em class="discount_per">15%</em>194,650원</span>
                                 </p>
-                                <p>무료배송</p>
+                                <p class="delivery_free">무료배송</p>
                             </a>
                         </div>
                     </div>
@@ -2021,10 +2010,10 @@
                             <a href="#">
                                 <h3>Heidi Alpaca Nordic Cardigan (Ivory)</h3>
                                 <p class="price">
-                                    <del class="origin">229,000원</del><br>
-                                    <span class="discount_per">15%</span><span>194,650원</span>
+                                    <del class="origin">229,000원</del>
+                                    <span><em class="discount_per">15%</em>194,650원</span>
                                 </p>
-                                <p>무료배송</p>
+                                <p class="delivery_free">무료배송</p>
                             </a>
                         </div>
                     </div>
@@ -2039,17 +2028,17 @@
                             <a href="#">
                                 <h3>Heidi Alpaca Nordic Cardigan (Ivory)</h3>
                                 <p class="price">
-                                    <del class="origin">229,000원</del><br>
-                                    <span class="discount_per">15%</span><span>194,650원</span>
+                                    <del class="origin">229,000원</del>
+                                    <span><em class="discount_per">15%</em>194,650원</span>
                                 </p>
-                                <p>무료배송</p>
+                                <p class="delivery_free">무료배송</p>
                             </a>
                         </div>
                     </div>
                 </div>
                 <!-- 2,3,4,5...페이지 -->
             </div>
-            <div class="num_btn">
+            <div class="pagenation">
                 <button type="button" class="prev"><i class="fa-solid fa-chevron-left"></i></button>
                 <span class="num"><span class="current">1</span><span class="all">/4</span></span>
                 <button type="button" class="next"><i class="fa-solid fa-chevron-right"></i></button>

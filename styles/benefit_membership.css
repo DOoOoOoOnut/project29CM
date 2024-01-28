@@ -1,0 +1,67 @@
+main {background-color: #f9f9f9; padding-bottom: 220px;}
+/* 전체 너비 조정 */
+main .info_graph,
+main .rank_benefit,
+main .membership_coupon {width: 1000px; margin: 0 auto;}
+/* 상단 안내문구 */
+main .info_graph {margin: 60px auto 120px;}
+main .info_graph .info {font-size: 1.063rem; line-height: 28px; margin-bottom: 30px; color: #303033;}
+/* 그래프 박스 전체, 개별 */
+main .info_graph .graph {display: flex; align-items: end;}
+main .info_graph .graph .box {
+    width: 25%; position: relative; text-align: center;
+    display: flex; flex-flow: column nowrap; justify-content: space-between;
+}
+main .info_graph .graph .box1 {background-color: #949496; height: 120px;}
+main .info_graph .graph .box2 {background-color: #58585b; height: 135px;}
+main .info_graph .graph .box3 {background-color: #444446; height: 150px;}
+main .info_graph .graph .box4 {background-color: #303033; height: 165px;}
+/* 그래프 박스 전체 내부 */
+main .info_graph .graph .box .rank {color: #fff; display: block; margin-top: 30px;}
+main .info_graph .graph .box .rank_info {font-size: 0.688rem; color: #fff; display: block; margin-bottom: 25px;}
+main .info_graph .graph .box .next {
+    display: inline-block; background-color: #9b9b9b; 
+    position: absolute; left: -10px; top: 45%; font-size: 0.688rem;
+    width: 20px; height: 20px; text-align: center; border-radius: 50%;
+}
+main .info_graph .graph .box1 .next {display: none;}
+main .info_graph .graph .box .next i[class$=right] {
+    color: #fff; padding-top: 5px;
+}
+/* 회원등급별 혜택 */
+main .rank_benefit {
+    display: flex; flex-flow: row wrap; justify-content: space-between;
+    margin-bottom: 40px;
+}
+main .rank_benefit dt {
+    width: 30%;
+    font-size: 2.5rem; border-top: 4px solid #000;
+    padding-top: 30px; margin-bottom: 100px; 
+}
+main .rank_benefit dd {
+    width: 65%;
+    display: flex; border-top: 1px solid #ccc;
+    padding-top: 33px;
+}
+main .rank_benefit dd .period {
+    font-size: 0.875rem; line-height: 25px; width:35%;
+    color: #9b9b9b;
+}
+main .rank_benefit dd .benefit {
+    font-size: 0.875rem; line-height: 25px; color: #303033;
+}
+/* 멤버십,쿠폰 안내 */
+main .membership_coupon {
+    background-color: #fff; padding: 50px 30px;
+}
+main .membership_coupon h3 {
+    font-size: 0.875rem; color: 5b5b5b; margin-bottom: 30px;
+}
+main .membership_coupon ul {padding-left: 8px;}
+main .membership_coupon .membership {margin-bottom: 50px;}
+main .membership_coupon .coupon {}
+main .membership_coupon ul li {
+    font-size: 0.75rem; color: #303033;
+    margin-bottom: 10px; list-style: disc; padding-left: 5px;
+    margin-left: 10px;
+}

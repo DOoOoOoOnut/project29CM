@@ -1,0 +1,19 @@
+main {background-color: #f9f9f9; padding: 100px 0 60px;}
+/* dl> dd> dt 공통선택자 */
+main .card_benefit {
+    width: 1000px; margin: 0 auto;
+    display: flex; flex-flow: row wrap; justify-content: space-between;
+}
+main .card_benefit dt {
+    width: 30%; font-size: 2.063rem; padding-top: 30px;
+    border-top: 4px solid #000; margin-bottom: 80px; line-height: 40px;
+}
+main .card_benefit dd {
+    width: 65%; font-size: 0.875rem; padding-top: 30px;
+    border-top: 1px solid #ccc; color: #303033; line-height: 24px;
+}
+main .card_benefit dd .notice {font-size: 0.875rem; color: #ff4700; line-height: 24px;}
+/* dd 개별선택자*/
+main .card_benefit .card_discount {}
+main .card_benefit .point {}
+main .card_benefit .voucher {}
