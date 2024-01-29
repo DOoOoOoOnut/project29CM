@@ -38,7 +38,7 @@ main .item_container .item_detail .item {
 main .item_container .item_detail .item .left_photo {width: calc((100% - 45px) / 2);}
 /* 버튼 */
 main .item_container .item_detail .item .left_photo .photo .btn_wrap {
-    position: absolute; top: 45%; 
+    position: absolute; top: 50%; /* background-color: aqua; */
     display: flex; justify-content: space-between; width: 100%;
 }
 main .item_container .item_detail .item .left_photo .photo .btn_wrap button {
@@ -53,8 +53,8 @@ main .item_container .item_detail .item .left_photo .next i[class$=right] {}
 main .item_container .item_detail .item .left_photo .photo {
     display: block; position: relative;
 }
-main .item_container .item_detail .item .left_photo .photo img {width: 100%; display: none;}
-main .item_container .item_detail .item .left_photo .photo img:first-child {display: block;}
+main .item_container .item_detail .item .left_photo .photo img {width: 100%; position: absolute; left: 0; top: 0; display: none;}
+main .item_container .item_detail .item .left_photo .photo .current {display: block;}
 /* 페이지네이션 */
 main .item_container .item_detail .item .left_photo .pagenation {
     display: flex; justify-content: center;
