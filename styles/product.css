@@ -58,7 +58,7 @@ main .item_container .item_detail .item .left_photo .photo .current {display: bl
 /* 페이지네이션 */
 main .item_container .item_detail .item .left_photo .pagenation {
     display: flex; justify-content: center;
-    margin-top: 20px;
+    margin-top: 105%;
 }
 main .item_container .item_detail .item .left_photo .pagenation button {
     width: 10px; height: 10px; background-color: #e4e4e4; display: inline-block; border-radius: 50%;
